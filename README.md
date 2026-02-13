@@ -3,6 +3,14 @@
 An external module for pFUI inspired by [LocationPlus by Benik](https://github.com/Benik/LocationPlus) that adds a location panel, two coordinate frames, and two datatext panels. Most features from this addon can be configured!<br>
 
 ## Screenshots
+<img width="921" height="87" alt="image" src="https://github.com/user-attachments/assets/28fe81d8-d2d1-4f59-af79-3fb4d6be4feb" /><br>
+*The frames with transparency enabled.*<br><br><br>
+<img width="921" height="87" alt="image" src="https://github.com/user-attachments/assets/47741cc4-921d-43ca-9cdf-8b7bfaa4d2ae" /><br>
+*The frames with transparency disabled and with matching height.*<br><br><br>
+<img width="552" height="720" alt="tooltip" src="https://github.com/user-attachments/assets/51ed8901-7e6f-4737-901d-4d78a89d3432" /><br>
+*The zone information tooltip with both zones and instances recommendation enabled.*<br><br><br>
+<img width="687" height="1446" alt="options" src="https://github.com/user-attachments/assets/4ae46d5a-5fcc-4b83-bbea-baba40fd0408" /><br>
+*The full extent of the available settings, as of 1.0.*
 
 ## Installation
 This addon requires [pfUI](https://github.com/shagu/pfUI) or one of its maintained forks, like [me0wg4ming's fork](https://github.com/me0wg4ming/pfUI). Make sure to download one of them first. 
