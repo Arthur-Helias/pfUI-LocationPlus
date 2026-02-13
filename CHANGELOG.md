@@ -1,6 +1,11 @@
 # pfUI-LocationPlus Changelog
 All changes to this project will be documented in this file.
 
+## [1.1.1] - 2026-02-13
+
+### Changed
+- Changed config creation functions from global to local
+
 ## [1.1] - 2026-02-13
 
 ### Added

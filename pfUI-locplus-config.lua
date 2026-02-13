@@ -2,14 +2,11 @@ setfenv(1, pfUI:GetEnvironment())
 
 local fontSize = C.panel.use_unitfonts == "1" and C.global.font_unit_size or C.global.font_size
 
-local configFrame = CreateFrame("Frame")
-configFrame:RegisterEvent("VARIABLES_LOADED")
-configFrame:SetScript("OnEvent", function()
-    InitializeDefaultValues()
-    CreateGuiConfigEntries()
-end)
+local DoesTableContainsKeyLP = function(table, contains)
+    return table[contains] ~= nil
+end
 
-function InitializeDefaultValues()
+local function InitializeDefaultValues()
     if pfUI_config and not DoesTableContainsKeyLP(pfUI_config, "locplus") then
         pfUI_config.locplus = {}
     end
@@ -81,7 +78,7 @@ function InitializeDefaultValues()
     end
 end
 
-function CreateGuiConfigEntries()
+local function CreateGuiConfigEntries()
     local CreateConfig = pfUI.gui.CreateConfig
     local CreateGUIEntry = pfUI.gui.CreateGUIEntry
     local U = pfUI.gui.UpdaterFunctions
@@ -137,13 +134,16 @@ function CreateGuiConfigEntries()
         CreateConfig(U["locplus"], T["Panel Width"], C.locplus, "rightdatapanelwidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Location Plus Version: 1.1"], nil, nil, "header")
+        CreateConfig(U["locplus"], T["Location Plus Version: 1.1.1"], nil, nil, "header")
         CreateConfig(U["locplus"], T["Website"], nil, nil, "button", function()
             pfUI.chat.urlcopy.CopyText("https://github.com/Arthur-Helias/pfUI-LocationPlus")
         end)
     end)
 end
 
-DoesTableContainsKeyLP = function(table, contains)
-    return table[contains] ~= nil
-end
+local configFrame = CreateFrame("Frame")
+configFrame:RegisterEvent("VARIABLES_LOADED")
+configFrame:SetScript("OnEvent", function()
+    InitializeDefaultValues()
+    CreateGuiConfigEntries()
+end)
