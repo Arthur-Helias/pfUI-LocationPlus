@@ -2,6 +2,13 @@
 
 An external module for pFUI inspired by [LocationPlus by Benik](https://github.com/Benik/LocationPlus) that adds a location panel, two coordinate frames, and two datatext panels. Most features from this addon can be configured!<br>
 
+## Features
+- A configurable location panel showing your current zone and level range.
+- Two coordinate frames.
+- Two datatext panels to show information such as FPS, latency, gear durability or any other datatexts.
+- Lots of settings such as position, size, transparency, features, and more!
+- Tooltip with extended zone information and content recommendation when hovering the location panel.
+
 ## Screenshots
 <img width="921" height="87" alt="image" src="https://github.com/user-attachments/assets/28fe81d8-d2d1-4f59-af79-3fb4d6be4feb" /><br>
 *The frames with transparency enabled.*<br><br><br>
@@ -10,7 +17,7 @@ An external module for pFUI inspired by [LocationPlus by Benik](https://github.c
 <img width="552" height="720" alt="tooltip" src="https://github.com/user-attachments/assets/51ed8901-7e6f-4737-901d-4d78a89d3432" /><br>
 *The zone information tooltip with both zones and instances recommendation enabled.*<br><br><br>
 <img width="687" height="1446" alt="options" src="https://github.com/user-attachments/assets/4ae46d5a-5fcc-4b83-bbea-baba40fd0408" /><br>
-*The full extent of the available settings, as of 1.0.*
+*The full extent of the available settings, as of 1.1.*
 
 ## Installation
 This addon requires [pfUI](https://github.com/shagu/pfUI) or one of its maintained forks, like [me0wg4ming's fork](https://github.com/me0wg4ming/pfUI). Make sure to download one of them first. 
@@ -35,10 +42,10 @@ This addon is compatible with [the original pfUI by Shagu](https://github.com/sh
 Due to the lack of zone's IDs related API in 1.12 (as far as I'm aware), WoW clients using any other language than English might encounter issues. If any such issues arise, please feel free to report it through the `Issues` tab on this repository.
 
 ## Addons Recommendation
-Here are a few other addons that improve pfUI or other parts of the game and do not conflict with this addon:<br>
-[pfUI-addonskinner](https://github.com/jrc13245/pfUI-addonskinner) - Another module for pfUI that skins other addons to match the style of pfUI.<br>
-[pfUI-bettertotems](https://github.com/Bombg/pfUI-bettertotems) - Another module for pfUI that improves the totem module.<br>
-[ZonesLevel](https://github.com/Arthur-Helias/ZonesLevel) - Adds zones level range to your world map.
+Here are a few other addons that improve pfUI or other parts of the game and do not conflict with this addon:
+- [pfUI-addonskinner](https://github.com/jrc13245/pfUI-addonskinner) - Another module for pfUI that skins other addons to match the style of pfUI.
+- [pfUI-bettertotems](https://github.com/Bombg/pfUI-bettertotems) - Another module for pfUI that improves the totem module.
+- [ZonesLevel](https://github.com/Arthur-Helias/ZonesLevel) - Adds zones level range to your world map.
 
 ## Extra Notes
 No code was copied from [Benik's original Location Plus](https://github.com/Benik/LocationPlus). I've simply recreated to the best of my ability the features of the original addon through screenshots and gameplay.

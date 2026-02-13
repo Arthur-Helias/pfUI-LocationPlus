@@ -76,73 +76,120 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
         return currentZoneLevelRange .. ")|r"
     end
 
-    lpRootFrame.GetRecommendedContent = function(_, currentRealZone, type)
-        local recommended = {}
+    lpRootFrame.GetRecommendedContent = function(_, currentRealZone)
+        local recommendedZones = {}
+        local recommendedInstances = {}
         local playerLevel = UnitLevel("player")
         local playerFaction = UnitFactionGroup("player")
-        local dbTable = (type == "instance") and DBLocPlus.INSTANCES or DBLocPlus.ZONES
 
-        for name, data in pairs(dbTable) do
+        for name, data in pairs(DBLocPlus.ZONES) do
             local minLevel = data[1]
             local maxLevel = data[2]
-
             local averageLevel = floor((maxLevel - minLevel) / 2) + minLevel
             local levelDiff = averageLevel - playerLevel
-
+            local zoneFaction = data[5]
+            local isCity = data[6]
             local isValidZone = true
 
-            if type ~= "instance" then
-                local zoneFaction = data[5]
-                local isCity = data[6]
-
-                if name == PFLP_MOONGLADE then
-                    isValidZone = false
-                end
-
-                if zoneFaction and zoneFaction ~= "Contested" and zoneFaction ~= playerFaction then
-                    isValidZone = false
-                end
-
-                if isCity then
-                    isValidZone = false
-                end
+            if name == PFLP_MOONGLADE or (zoneFaction and zoneFaction ~= "Contested" and zoneFaction ~= playerFaction) or isCity then
+                isValidZone = false
             end
 
-            if isValidZone and levelDiff > -8 and levelDiff <= 4 then
-                if name ~= currentRealZone then
-                    local color = LibLocPlus:GetZoneColor(playerLevel, minLevel, maxLevel)
-                    local levelRangeText = color .. minLevel
-                    if minLevel ~= maxLevel then
-                        levelRangeText = levelRangeText .. "-" .. maxLevel
-                    end
-                    levelRangeText = levelRangeText .. "|r"
-
-                    local displayName = name
-
-                    if type == "instance" then
-                        local instType = data[5]
-                        local instSize = data[6]
-
-                        displayName = displayName .. " |cffcccccc[" .. instSize .. "]|r"
-                        if instType == "Raid" then
-                            displayName = displayName .. " |cffffaaaaRaid|r"
-                        end
-                    end
-
-                    table.insert(recommended, { displayName, levelRangeText, minLevel })
-                end
+            if isValidZone and levelDiff > -8 and levelDiff <= 4 and name ~= currentRealZone then
+                local color = LibLocPlus:GetZoneColor(playerLevel, minLevel, maxLevel)
+                local levelRangeText = color .. minLevel .. (minLevel ~= maxLevel and "-" .. maxLevel or "") .. "|r"
+                table.insert(recommendedZones, { name, levelRangeText, minLevel, maxLevel })
             end
         end
 
-        table.sort(recommended, function(a, b)
-            if a[3] == b[3] then
-                return a[1] < b[1]
-            else
-                return a[3] < b[3]
+        for name, data in pairs(DBLocPlus.INSTANCES) do
+            local minLevel = data[1]
+            local maxLevel = data[2]
+            local averageLevel = floor((maxLevel - minLevel) / 2) + minLevel
+            local levelDiff = averageLevel - playerLevel
+
+            if levelDiff > -8 and levelDiff <= 4 and name ~= currentRealZone then
+                local color = LibLocPlus:GetZoneColor(playerLevel, minLevel, maxLevel)
+                local levelRangeText = color .. minLevel .. (minLevel ~= maxLevel and "-" .. maxLevel or "") .. "|r"
+                local displayName = name ..
+                    " |cffcccccc[" .. data[6] .. "]|r" .. (data[5] == "Raid" and " |cffffaaaaRaid|r" or "")
+                table.insert(recommendedInstances, { displayName, levelRangeText, minLevel, maxLevel })
             end
+        end
+
+        table.sort(recommendedZones, function(a, b)
+            if a[3] == b[3] then return a[1] < b[1] end
+            return a[3] < b[3]
         end)
 
-        return recommended
+        table.sort(recommendedInstances, function(a, b)
+            if a[3] == b[3] then return a[1] < b[1] end
+            return a[3] < b[3]
+        end)
+
+        local combined = {}
+        for _, entry in ipairs(recommendedZones) do
+            table.insert(combined, { entry[1], entry[2], entry[3], entry[4], "zone" })
+        end
+        for _, entry in ipairs(recommendedInstances) do
+            table.insert(combined, { entry[1], entry[2], entry[3], entry[4], "instance" })
+        end
+
+        table.sort(combined, function(a, b)
+            if a[3] == b[3] then return a[1] < b[1] end
+            return a[3] < b[3]
+        end)
+
+        while table.getn(combined) > 16 do
+            local removeIndex = 1
+
+            if playerLevel == 60 then
+                for i = 2, table.getn(combined) do
+                    local current = combined[i]
+                    local selected = combined[removeIndex]
+                    local currentIsInstance = current[5] == "instance"
+                    local selectedIsInstance = selected[5] == "instance"
+
+                    local betterToRemove = false
+                    if currentIsInstance and not selectedIsInstance then
+                        betterToRemove = false
+                    elseif not currentIsInstance and selectedIsInstance then
+                        betterToRemove = true
+                    else
+                        if current[3] < selected[3] then
+                            betterToRemove = true
+                        end
+                    end
+
+                    if betterToRemove then
+                        removeIndex = i
+                    end
+                end
+            else
+                for i = 2, table.getn(combined) do
+                    local current = combined[i]
+                    local selected = combined[removeIndex]
+
+                    if current[3] < selected[3] then
+                        removeIndex = i
+                    end
+                end
+            end
+
+            table.remove(combined, removeIndex)
+        end
+
+        recommendedZones = {}
+        recommendedInstances = {}
+        for _, entry in ipairs(combined) do
+            if entry[5] == "zone" then
+                table.insert(recommendedZones, { entry[1], entry[2], entry[3], entry[4] })
+            else
+                table.insert(recommendedInstances, { entry[1], entry[2], entry[3], entry[4] })
+            end
+        end
+
+        return recommendedZones, recommendedInstances
     end
 
     lpRootFrame.Refresh = function()
@@ -207,20 +254,18 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
             GameTooltip:AddDoubleLine("Fishing", color .. fishingLevel)
         end
 
-        if pfUI_config.locplus.enablerecommendedzones == "1" then
-            local recZones = lpRootFrame:GetRecommendedContent(realZone, "zone")
-            if recZones and table.getn(recZones) > 0 then
+        if pfUI_config.locplus.enablerecommendedzones == "1" or pfUI_config.locplus.enablerecommendedinstances == "1" then
+            local recZones, recInstances = lpRootFrame:GetRecommendedContent(realZone)
+
+            if pfUI_config.locplus.enablerecommendedzones == "1" and recZones and table.getn(recZones) > 0 then
                 GameTooltip:AddLine(" ")
                 GameTooltip:AddLine("|cffffffffRecommended Zones:|r")
                 for _, entry in ipairs(recZones) do
                     GameTooltip:AddDoubleLine(entry[1], entry[2])
                 end
             end
-        end
 
-        if pfUI_config.locplus.enablerecommendedinstances == "1" then
-            local recInstances = lpRootFrame:GetRecommendedContent(realZone, "instance")
-            if recInstances and table.getn(recInstances) > 0 then
+            if pfUI_config.locplus.enablerecommendedinstances == "1" and recInstances and table.getn(recInstances) > 0 then
                 GameTooltip:AddLine(" ")
                 GameTooltip:AddLine("|cffffffffRecommended Instances:|r")
                 for _, entry in ipairs(recInstances) do
@@ -232,6 +277,7 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
         GameTooltip:AddLine(" ")
         GameTooltip:AddDoubleLine("Left Click", "|cffffffff" .. "Toggle World Map")
         GameTooltip:AddDoubleLine("Shift-Click", "|cffffffff" .. "Toggle Datatext Panels")
+        GameTooltip:AddDoubleLine("Ctrl-Click", "|cffffffff" .. "Toggle Settings")
         GameTooltip:Show()
     end
 
@@ -265,6 +311,33 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
                     right:Show()
                 end
             end
+            return
+        end
+
+        if IsControlKeyDown() and arg1 == "LeftButton" then
+            if not pfUI.gui then
+                return
+            end
+
+            if pfUI.gui:IsShown() then
+                pfUI.gui:Hide()
+                return
+            else
+                pfUI.gui:Show()
+            end
+
+            if not pfUI.gui.frames["Thirdparty"] then
+                return
+            end
+
+            pfUI.gui.frames["Thirdparty"]:Click()
+
+            if not pfUI.gui.frames["Thirdparty"]["Location Plus"] then
+                return
+            end
+
+            pfUI.gui.frames["Thirdparty"]["Location Plus"]:Click()
+
             return
         end
 
