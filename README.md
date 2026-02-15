@@ -19,7 +19,7 @@ An external module for pFUI inspired by [LocationPlus by Benik](https://github.c
 <img width="552" height="720" alt="tooltip" src="https://github.com/user-attachments/assets/51ed8901-7e6f-4737-901d-4d78a89d3432" /><br>
 *The zone information tooltip with both zones and instances recommendation enabled.*<br><br><br>
 <img width="687" height="1446" alt="options" src="https://github.com/user-attachments/assets/4ae46d5a-5fcc-4b83-bbea-baba40fd0408" /><br>
-*The full extent of the available settings, as of 1.1.1*
+*The full extent of the available settings, as of 1.1.2*
 
 ## Installation
 
