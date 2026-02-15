@@ -28,10 +28,10 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
         end
 
         if not DBLocPlus.ZONES[currentRealZone] then
-            currentRealZone = GetMinimapZoneText()
+            return
         end
 
-        return DBLocPlus.ZONES[currentRealZone][5]
+        return DBLocPlus.ZONES[currentRealZone][5] -- Fix maraudon
     end
 
     lpRootFrame.GetZoneData = function(_, currentRealZone)
@@ -47,7 +47,11 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
         end
 
         if not locationType[zoneName] then
-            return nil
+            locationType = not IsInInstance() and DBLocPlus.INSTANCES or DBLocPlus.ZONES
+        end
+
+        if not locationType[zoneName] then
+            return
         end
 
         return zoneName, locationType, locationType[currentRealZone][3], locationType[currentRealZone][4]
