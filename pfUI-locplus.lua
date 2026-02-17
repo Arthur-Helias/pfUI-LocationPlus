@@ -207,9 +207,18 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
         local currentRealZoneLevelRange = lpRootFrame:GetZoneLevelRange(currentRealZone)
 
         local finalText = GetMinimapZoneText()
+
+        if pfUI_config.locplus.coloredstatuslocation == "1" then
+            local status = lpRootFrame:GetZoneStatus(currentRealZone)
+            if status then
+                finalText = LibLocPlus:GetStatusColor(status, UnitFactionGroup("player")) .. finalText .. "|r"
+            end
+        end
+
         if currentRealZoneLevelRange then
             finalText = finalText .. " " .. currentRealZoneLevelRange
         end
+
         lpRootFrame.text:SetText(finalText)
     end
 

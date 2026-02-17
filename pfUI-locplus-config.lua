@@ -28,6 +28,9 @@ local function InitializeDefaultValues()
     if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enablerecommendedinstances") then
         pfUI:UpdateConfig("locplus", nil, "enablerecommendedinstances", "1")
     end
+    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "coloredstatuslocation") then
+        pfUI:UpdateConfig("locplus", nil, "coloredstatuslocation", "0")
+    end
     if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "locationframeheight") then
         pfUI:UpdateConfig("locplus", nil, "locationframeheight", fontSize + 6)
     end
@@ -93,6 +96,7 @@ local function CreateGuiConfigEntries()
         CreateConfig(U["locplus"], T["Show Recommended Zones"], C.locplus, "enablerecommendedzones", "checkbox")
         CreateConfig(U["locplus"], T["Show Recommended Instances"], C.locplus, "enablerecommendedinstances", "checkbox")
         CreateConfig(U["locplus"], T["Central Zone Frame"], nil, nil, "header")
+        CreateConfig(U["locplus"], T["Color Zone Name By Status"], C.locplus, "coloredstatuslocation", "checkbox")
         CreateConfig(U["locplus"], T["Frame Height"], C.locplus, "locationframeheight", "text", nil, nil,
             nil, "number")
         CreateConfig(U["locplus"], T["Frame Width"], C.locplus, "locationframewidth", "text", nil, nil, nil,
@@ -134,7 +138,7 @@ local function CreateGuiConfigEntries()
         CreateConfig(U["locplus"], T["Panel Width"], C.locplus, "rightdatapanelwidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Location Plus Version: 1.1.2"], nil, nil, "header")
+        CreateConfig(U["locplus"], T["Location Plus Version: 1.2"], nil, nil, "header")
         CreateConfig(U["locplus"], T["Website"], nil, nil, "button", function()
             pfUI.chat.urlcopy.CopyText("https://github.com/Arthur-Helias/pfUI-LocationPlus")
         end)

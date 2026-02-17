@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.2] - 2026-02-17
+
+### Added
+
+- Added setting for zone name coloring on the central frame based on faction status
+
 ## [1.1.2] - 2026-02-16
 
 ### Fixed
