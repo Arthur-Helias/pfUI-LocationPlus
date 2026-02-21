@@ -1,6 +1,6 @@
 # pfUI Location Plus
 
-An external module for pFUI inspired by [LocationPlus by Benik](https://github.com/Benik/LocationPlus) that adds a location panel, two coordinate frames, and two datatext panels. Most features from this addon can be configured!  
+An external module for pFUI inspired by [LocationPlus by Benik](https://github.com/Benik/LocationPlus) that adds a location panel, two coordinate frames, and two datatext panels. Most features from this addon can be configured in pfUI Config Menu -> Thirdparty -> Location Plus or by Ctrl+Clicking on the location panel!  
 
 ## Features
 
@@ -8,7 +8,7 @@ An external module for pFUI inspired by [LocationPlus by Benik](https://github.c
 - Two coordinate frames.
 - Two datatext panels to show information such as FPS, latency, gear durability or any other datatexts.
 - Lots of settings such as position, size, transparency, features, and more!
-- Tooltip with extended zone information and content recommendation when hovering the location panel.
+- A tooltip with extended zone information and content recommendation when hovering the location panel.
 
 ## Screenshots
 
