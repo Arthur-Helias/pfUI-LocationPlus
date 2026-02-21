@@ -31,7 +31,7 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
             return
         end
 
-        return DBLocPlus.ZONES[currentRealZone][5] -- Fix maraudon
+        return DBLocPlus.ZONES[currentRealZone][5]
     end
 
     lpRootFrame.GetZoneData = function(_, currentRealZone)
@@ -132,9 +132,11 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
         end)
 
         local combined = {}
+
         for _, entry in ipairs(recommendedZones) do
             table.insert(combined, { entry[1], entry[2], entry[3], entry[4], "zone" })
         end
+
         for _, entry in ipairs(recommendedInstances) do
             table.insert(combined, { entry[1], entry[2], entry[3], entry[4], "instance" })
         end

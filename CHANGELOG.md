@@ -2,6 +2,13 @@
 
 All changes to this project will be documented in this file.
 
+## [1.2.1] - 2026-02-21
+
+### Fixed
+
+- Fixed Sunken Temple not being found
+- Fixed LBRS being categorized as 10-man
+
 ## [1.2] - 2026-02-17
 
 ### Added
