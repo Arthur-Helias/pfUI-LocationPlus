@@ -12,6 +12,7 @@ if GetLocale() == "esES" then
     PFLP_BLACKFATHOMDEEPS = "Cavernas de Brazanegra"
     PFLP_BLACKMORASS = "La Ciénaga Negra"
     PFLP_BLACKROCKDEPTHS = "Profundidades de Roca Negra"
+    PFLP_BLACKROCKMOUNTAIN = "Montaña Roca Negra"
     PFLP_BLACKSTONEISLAND = "Isla Roca Negra"
     PFLP_BLACKWINGLAIR = "Guarida de Alanegra"
     PFLP_BLASTEDLANDS = "Las Tierras Devastadas"

@@ -12,6 +12,7 @@ if GetLocale() == "ptBR" then
     PFLP_BLACKFATHOMDEEPS = "Cavernas de Guanabruxa"
     PFLP_BLACKMORASS = "Lodaçal Negro"
     PFLP_BLACKROCKDEPTHS = "Abismo Rocha Negra"
+    PFLP_BLACKROCKMOUNTAIN = "Montanha Rocha Negra"
     PFLP_BLACKSTONEISLAND = "Ilha Pedra Negra"
     PFLP_BLACKWINGLAIR = "Covil Asa Negra"
     PFLP_BLASTEDLANDS = "Barreira do Inferno"

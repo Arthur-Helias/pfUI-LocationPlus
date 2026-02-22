@@ -2,6 +2,16 @@
 
 All changes to this project will be documented in this file.
 
+## [1.2.2] - 2026-02-22
+
+### Added
+
+- Added version global variable `PFLP_VERSION`
+
+### Fixed
+
+- Fixed Blackrock Mountain not being found
+
 ## [1.2.1] - 2026-02-21
 
 ### Fixed

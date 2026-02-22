@@ -138,7 +138,7 @@ local function CreateGuiConfigEntries()
         CreateConfig(U["locplus"], T["Panel Width"], C.locplus, "rightdatapanelwidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Location Plus Version: 1.2.1"], nil, nil, "header")
+        CreateConfig(U["locplus"], T["Location Plus Version: " .. PFLP_VERSION], nil, nil, "header")
         CreateConfig(U["locplus"], T["Website"], nil, nil, "button", function()
             pfUI.chat.urlcopy.CopyText("https://github.com/Arthur-Helias/pfUI-LocationPlus")
         end)

@@ -12,6 +12,7 @@ if GetLocale() == "frFR" then
     PFLP_BLACKFATHOMDEEPS = "Profondeurs de Brassenoire"
     PFLP_BLACKMORASS = "Le Noir Marécage"
     PFLP_BLACKROCKDEPTHS = "Profondeurs de Rochenoire"
+    PFLP_BLACKROCKMOUNTAIN = "Mont Rochenoire"
     PFLP_BLACKSTONEISLAND = "Île de Rochenoire"
     PFLP_BLACKWINGLAIR = "Repaire de l'Aile noire"
     PFLP_BLASTEDLANDS = "Terres foudroyées"

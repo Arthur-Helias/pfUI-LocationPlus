@@ -1,3 +1,5 @@
+PFLP_VERSION = "1.2.2"
+
 pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
     local font = C.panel.use_unitfonts == "1" and pfUI.font_unit or pfUI.font_default
     local fontSize = C.panel.use_unitfonts == "1" and C.global.font_unit_size or C.global.font_size
@@ -95,7 +97,7 @@ pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
             local isCity = data[6]
             local isValidZone = true
 
-            if name == PFLP_MOONGLADE or (zoneFaction and zoneFaction ~= "Contested" and zoneFaction ~= playerFaction) or isCity then
+            if name == PFLP_MOONGLADE or name == PFLP_BLACKROCKMOUNTAIN or (zoneFaction and zoneFaction ~= "Contested" and zoneFaction ~= playerFaction) or isCity then
                 isValidZone = false
             end
 

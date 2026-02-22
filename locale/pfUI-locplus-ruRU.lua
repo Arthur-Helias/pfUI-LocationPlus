@@ -12,6 +12,7 @@ if GetLocale() == "ruRU" then
     PFLP_BLACKFATHOMDEEPS = "Непроглядная Пучина"
     PFLP_BLACKMORASS = "Черные топи"
     PFLP_BLACKROCKDEPTHS = "Глубины Черной горы"
+    PFLP_BLACKROCKMOUNTAIN = "Черная гора"
     PFLP_BLACKSTONEISLAND = "Остров Черного Камня"
     PFLP_BLACKWINGLAIR = "Логово Крыла Тьмы"
     PFLP_BLASTEDLANDS = "Выжженные земли"

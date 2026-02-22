@@ -10,6 +10,7 @@ DBLocPlus.ZONES = {
     [PFLP_AZSHARA] = { 45, 55, "Kalimdor", 200, "Contested", false },
     [PFLP_BADLANDS] = { 35, 45, "Eastern Kingdoms", 175, "Contested", false },
     [PFLP_BALOR] = { 29, 34, "Eastern Kingdoms", 145, "Contested", false },
+    [PFLP_BLACKROCKMOUNTAIN] = { 50, 58, "Eastern Kingdoms", 0, "Contested", false },
     [PFLP_BLACKSTONEISLAND] = { 1, 10, "Kalimdor", 1, "Horde", false },
     [PFLP_BLASTEDLANDS] = { 45, 55, "Eastern Kingdoms", 235, "Contested", false },
     [PFLP_BURNINGSTEPPES] = { 50, 58, "Eastern Kingdoms", 240, "Contested", false },

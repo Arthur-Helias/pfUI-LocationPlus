@@ -12,6 +12,7 @@ if GetLocale() == "zhCN" then
     PFLP_BLACKFATHOMDEEPS = "黑暗深渊"
     PFLP_BLACKMORASS = "黑色沼泽"
     PFLP_BLACKROCKDEPTHS = "黑石深渊"
+    PFLP_BLACKROCKMOUNTAIN = "黑石山"
     PFLP_BLACKSTONEISLAND = "黑石岛"
     PFLP_BLACKWINGLAIR = "黑翼之巢"
     PFLP_BLASTEDLANDS = "诅咒之地"

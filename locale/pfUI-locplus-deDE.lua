@@ -12,6 +12,7 @@ if GetLocale() == "deDE" then
     PFLP_BLACKFATHOMDEEPS = "Tiefschwarze Grotte"
     PFLP_BLACKMORASS = "Der Schwarze Morast"
     PFLP_BLACKROCKDEPTHS = "Schwarzfelstiefen"
+    PFLP_BLACKROCKMOUNTAIN = "Blackrock Mountain"
     PFLP_BLACKSTONEISLAND = "Schwarzfelsinsel"
     PFLP_BLACKWINGLAIR = "Pechschwingenhort"
     PFLP_BLASTEDLANDS = "Verwüstete Lande"
