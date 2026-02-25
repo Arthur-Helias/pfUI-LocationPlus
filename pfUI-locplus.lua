@@ -1,4 +1,4 @@
-PFLP_VERSION = "1.2.4"
+PFLP_VERSION = "1.2.5"
 
 pfUI:RegisterModule("locationplus", "vanilla", function()
     local font = C.panel.use_unitfonts == "1" and pfUI.font_unit or pfUI.font_default

@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.2.5] - 2026-02-25
+
+### Fixed
+
+- Fixed Dire Maul not being found
+
 ## [1.2.4] - 2026-02-25
 
 ### Fixed
