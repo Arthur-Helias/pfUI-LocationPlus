@@ -2,6 +2,13 @@
 
 All changes to this project will be documented in this file.
 
+## [1.2.3] - 2026-02-25
+
+### Fixed
+
+- Fixed Blackrock Spire not being found
+- Fixed the module also being registered for TBC
+
 ## [1.2.2] - 2026-02-22
 
 ### Added

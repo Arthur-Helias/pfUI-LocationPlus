@@ -1,6 +1,6 @@
-PFLP_VERSION = "1.2.2"
+PFLP_VERSION = "1.2.3"
 
-pfUI:RegisterModule("locationplus", "vanilla:tbc", function()
+pfUI:RegisterModule("locationplus", "vanilla", function()
     local font = C.panel.use_unitfonts == "1" and pfUI.font_unit or pfUI.font_default
     local fontSize = C.panel.use_unitfonts == "1" and C.global.font_unit_size or C.global.font_size
 

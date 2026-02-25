@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: |cff33ffccpf|cffffffffUI|cffaaaaaa [Location Plus]
-## Version: 1.2.2
+## Version: 1.2.3
 ## Author: Walter Bennet
 ## Notes: An external module for |cff33ffccpf|r|cffffffffUI|r that adds a location panel and more!
 ## Dependencies: pfUI
