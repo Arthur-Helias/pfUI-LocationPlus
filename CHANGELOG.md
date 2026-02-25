@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.2.4] - 2026-02-25
+
+### Fixed
+
+- Fixed nil values being passed around when they shouldn't
+
 ## [1.2.3] - 2026-02-25
 
 ### Fixed

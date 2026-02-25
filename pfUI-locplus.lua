@@ -1,4 +1,4 @@
-PFLP_VERSION = "1.2.3"
+PFLP_VERSION = "1.2.4"
 
 pfUI:RegisterModule("locationplus", "vanilla", function()
     local font = C.panel.use_unitfonts == "1" and pfUI.font_unit or pfUI.font_default
@@ -44,6 +44,10 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
         local locationType = IsInInstance() and DBLocPlus.INSTANCES or DBLocPlus.ZONES
         local zoneName = currentRealZone
 
+        if not locationType then
+            return
+        end
+
         if not locationType[zoneName] then
             zoneName = GetMinimapZoneText()
         end
@@ -53,6 +57,10 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
         end
 
         if not locationType[zoneName] then
+            return
+        end
+
+        if not locationType[currentRealZone] then
             return
         end
 
