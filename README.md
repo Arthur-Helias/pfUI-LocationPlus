@@ -57,6 +57,7 @@ Here are a few other addons that improve pfUI or other parts of the game and do 
 - [pfUI-addonskinner](https://github.com/jrc13245/pfUI-addonskinner) - Another module for pfUI that skins other addons to match the style of pfUI.
 - [pfUI-bettertotems](https://github.com/Bombg/pfUI-bettertotems) - Another module for pfUI that improves the totem module.
 - [ZonesLevel](https://github.com/Arthur-Helias/ZonesLevel) - Adds zones level range to your world map.
+- [Better Character Panel](https://github.com/Arthur-Helias/BetterCharacterPanel) - Improves the character and inspect panel by adding enchants effect and more!
 
 ## Extra Notes
 
