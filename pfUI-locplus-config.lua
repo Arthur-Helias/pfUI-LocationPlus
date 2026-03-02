@@ -7,79 +7,45 @@ local DoesTableContainsKeyLP = function(table, contains)
 end
 
 local function InitializeDefaultValues()
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config, "locplus") then
+    if not pfUI_config then return end
+
+    if not DoesTableContainsKeyLP(pfUI_config, "locplus") then
         pfUI_config.locplus = {}
     end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enableincombat") then
-        pfUI:UpdateConfig("locplus", nil, "enableincombat", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enableininstance") then
-        pfUI:UpdateConfig("locplus", nil, "enableininstance", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enableshadow") then
-        pfUI:UpdateConfig("locplus", nil, "enableshadow", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enabletransparent") then
-        pfUI:UpdateConfig("locplus", nil, "enabletransparent", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enablerecommendedzones") then
-        pfUI:UpdateConfig("locplus", nil, "enablerecommendedzones", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "enablerecommendedinstances") then
-        pfUI:UpdateConfig("locplus", nil, "enablerecommendedinstances", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "coloredstatuslocation") then
-        pfUI:UpdateConfig("locplus", nil, "coloredstatuslocation", "0")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "locationframeheight") then
-        pfUI:UpdateConfig("locplus", nil, "locationframeheight", fontSize + 6)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "locationframewidth") then
-        pfUI:UpdateConfig("locplus", nil, "locationframewidth", 270)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftcoordinateframeenable") then
-        pfUI:UpdateConfig("locplus", nil, "leftcoordinateframeenable", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftcoordinateframeheight") then
-        pfUI:UpdateConfig("locplus", nil, "leftcoordinateframeheight", fontSize + 2)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftcoordinateframewidth") then
-        pfUI:UpdateConfig("locplus", nil, "leftcoordinateframewidth", fontSize + 16)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightcoordinateframeenable") then
-        pfUI:UpdateConfig("locplus", nil, "rightcoordinateframeenable", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightcoordinateframeheight") then
-        pfUI:UpdateConfig("locplus", nil, "rightcoordinateframeheight", fontSize + 2)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightcoordinateframewidth") then
-        pfUI:UpdateConfig("locplus", nil, "rightcoordinateframewidth", fontSize + 16)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftdatapanelenable") then
-        pfUI:UpdateConfig("locplus", nil, "leftdatapanelenable", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftdatapaneldatatext") then
-        pfUI:UpdateConfig("locplus", nil, "leftdatapaneldatatext", "durability")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftdatapanelheight") then
-        pfUI:UpdateConfig("locplus", nil, "leftdatapanelheight", fontSize + 2)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "leftdatapanelwidth") then
-        pfUI:UpdateConfig("locplus", nil, "leftdatapanelwidth", 100)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightdatapanelenable") then
-        pfUI:UpdateConfig("locplus", nil, "rightdatapanelenable", "1")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightdatapaneldatatext") then
-        pfUI:UpdateConfig("locplus", nil, "rightdatapaneldatatext", "time")
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightdatapanelheight") then
-        pfUI:UpdateConfig("locplus", nil, "rightdatapanelheight", fontSize + 2)
-    end
-    if pfUI_config and not DoesTableContainsKeyLP(pfUI_config.locplus, "rightdatapanelwidth") then
-        pfUI:UpdateConfig("locplus", nil, "rightdatapanelwidth", 100)
+
+    local defaults = {
+        enableincombat = "1",
+        enableininstance = "1",
+        enableshadow = "1",
+        enabletransparent = "1",
+        enablerecommendedzones = "1",
+        enablerecommendedinstances = "1",
+        coloredstatuslocation = "0",
+        locationframeheight = fontSize + 6,
+        locationframewidth = 270,
+        leftcoordinateframeenable = "1",
+        leftcoordinateframeheight = fontSize + 2,
+        leftcoordinateframewidth = fontSize + 16,
+        rightcoordinateframeenable = "1",
+        rightcoordinateframeheight = fontSize + 2,
+        rightcoordinateframewidth = fontSize + 16,
+        leftdatapanelenable = "1",
+        leftdatapaneldatatext = "durability",
+        leftdatapanelheight = fontSize + 2,
+        leftdatapanelwidth = 100,
+        rightdatapanelenable = "1",
+        rightdatapaneldatatext = "time",
+        rightdatapanelheight = fontSize + 2,
+        rightdatapanelwidth = 100,
+    }
+
+    for key, value in pairs(defaults) do
+        if not DoesTableContainsKeyLP(pfUI_config.locplus, key) then
+            pfUI:UpdateConfig("locplus", nil, key, value)
+        end
     end
 end
+
 
 local function CreateGuiConfigEntries()
     local CreateConfig = pfUI.gui.CreateConfig
@@ -87,59 +53,77 @@ local function CreateGuiConfigEntries()
     local U = pfUI.gui.UpdaterFunctions
 
     CreateGUIEntry(T["Thirdparty"], T["Location Plus"], function()
-        CreateConfig(U["locplus"], T["General Options"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Enable In Combat"], C.locplus, "enableincombat", "checkbox")
-        CreateConfig(U["locplus"], T["Enable In Instance"], C.locplus, "enableininstance", "checkbox")
-        CreateConfig(U["locplus"], T["Enable Frames Background Shadow"], C.locplus, "enableshadow", "checkbox")
-        CreateConfig(U["locplus"], T["Enable Frames Transparent Background"], C.locplus, "enabletransparent", "checkbox")
-        CreateConfig(U["locplus"], T["Tooltip Options"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Show Recommended Zones"], C.locplus, "enablerecommendedzones", "checkbox")
-        CreateConfig(U["locplus"], T["Show Recommended Instances"], C.locplus, "enablerecommendedinstances", "checkbox")
-        CreateConfig(U["locplus"], T["Central Zone Frame"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Color Zone Name By Status"], C.locplus, "coloredstatuslocation", "checkbox")
-        CreateConfig(U["locplus"], T["Frame Height"], C.locplus, "locationframeheight", "text", nil, nil,
+        -- General Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_GENERALOPTIONS], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_ENABLEINCOMBAT], C.locplus, "enableincombat", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_ENABLEININSTANCE], C.locplus, "enableininstance", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_ENABLESHADOW], C.locplus, "enableshadow", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_ENABLETRANSPARENT], C.locplus, "enabletransparent", "checkbox")
+
+        -- Tooltip Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_TOOLTIPOPTIONS], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_RECOMMENDEDZONES], C.locplus, "enablerecommendedzones", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_RECOMMENDEDINSTANCES], C.locplus, "enablerecommendedinstances",
+            "checkbox")
+
+        -- Central Zone Panel Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_CENTRALZONEPANEL], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_COLOREDSTATUSLOCATION], C.locplus, "coloredstatuslocation", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELHEIGHT], C.locplus, "locationframeheight", "text", nil, nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Frame Width"], C.locplus, "locationframewidth", "text", nil, nil, nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELWIDTH], C.locplus, "locationframewidth", "text", nil, nil, nil,
             "number")
-        CreateConfig(U["locplus"], T["Left Coordinate Frame (x)"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Enabled"], C.locplus, "leftcoordinateframeenable", "checkbox")
-        CreateConfig(U["locplus"], T["Frame Height"], C.locplus, "leftcoordinateframeheight", "text", nil,
+
+        -- Left Coordinate Panel Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_LEFTCOORDINATEPANEL], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELENABLE], C.locplus, "leftcoordinateframeenable", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELHEIGHT], C.locplus, "leftcoordinateframeheight", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Frame Width"], C.locplus, "leftcoordinateframewidth", "text", nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELWIDTH], C.locplus, "leftcoordinateframewidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Right Coordinate Frame (y)"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Enabled"], C.locplus, "rightcoordinateframeenable", "checkbox")
-        CreateConfig(U["locplus"], T["Frame Height"], C.locplus, "rightcoordinateframeheight", "text",
+
+        -- Right Coordinate Panel Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_RIGHTCOORDINATEPANEL], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELENABLE], C.locplus, "rightcoordinateframeenable", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELHEIGHT], C.locplus, "rightcoordinateframeheight", "text",
             nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Frame Width"], C.locplus, "rightcoordinateframewidth", "text", nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELWIDTH], C.locplus, "rightcoordinateframewidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Left Data Panel"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Enabled"], C.locplus, "leftdatapanelenable", "checkbox")
-        CreateConfig(U["locplus"], T["Datatext"], C.locplus, "leftdatapaneldatatext", "dropdown",
+
+        -- Left Data Panel Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_LEFTDATAPANEL], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELENABLE], C.locplus, "leftdatapanelenable", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELDATATEXT], C.locplus, "leftdatapaneldatatext", "dropdown",
             pfUI.gui.dropdowns.panel_values)
-        CreateConfig(U["locplus"], T["Panel Height"], C.locplus, "leftdatapanelheight", "text", nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELHEIGHT], C.locplus, "leftdatapanelheight", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Panel Width"], C.locplus, "leftdatapanelwidth", "text", nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELWIDTH], C.locplus, "leftdatapanelwidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Right Data Panel"], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Enabled"], C.locplus, "rightdatapanelenable", "checkbox")
-        CreateConfig(U["locplus"], T["Datatext"], C.locplus, "rightdatapaneldatatext", "dropdown",
+
+        -- Right Data Panel Options
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_RIGHTDATAPANEL], nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELENABLE], C.locplus, "rightdatapanelenable", "checkbox")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELDATATEXT], C.locplus, "rightdatapaneldatatext", "dropdown",
             pfUI.gui.dropdowns.panel_values)
-        CreateConfig(U["locplus"], T["Panel Height"], C.locplus, "rightdatapanelheight", "text", nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELHEIGHT], C.locplus, "rightdatapanelheight", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Panel Width"], C.locplus, "rightdatapanelwidth", "text", nil,
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_PANELWIDTH], C.locplus, "rightdatapanelwidth", "text", nil,
             nil,
             nil, "number")
-        CreateConfig(U["locplus"], T["Location Plus Version: " .. PFLP_VERSION], nil, nil, "header")
-        CreateConfig(U["locplus"], T["Website"], nil, nil, "button", function()
+
+        -- Version + Website
+        CreateConfig(U["locplus"],
+            T[PFLP_SETTINGS_VERSIONLABEL .. " " .. PFLP_VERSION_MAJOR .. "." .. PFLP_VERSION_MINOR .. "." .. PFLP_VERSION_PATCH],
+            nil, nil, "header")
+        CreateConfig(U["locplus"], T[PFLP_SETTINGS_WEBSITE], nil, nil, "button", function()
             pfUI.chat.urlcopy.CopyText("https://github.com/Arthur-Helias/pfUI-LocationPlus")
         end)
     end)

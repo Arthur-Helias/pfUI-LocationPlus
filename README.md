@@ -1,11 +1,12 @@
 # pfUI Location Plus
 
-An external module for pFUI inspired by [LocationPlus by Benik](https://github.com/Benik/LocationPlus) that adds a location panel, two coordinate frames, and two datatext panels. Most features from this addon can be configured in pfUI Config Menu -> Thirdparty -> Location Plus or by Ctrl+Clicking on the location panel!  
+An external module for pFUI inspired by [LocationPlus by Benik](https://github.com/Benik/LocationPlus) that adds a location panel, two coordinate panels, and two datatext panels.  
+Most features from this addon can be configured in pfUI Config Menu -> Thirdparty -> Location Plus or by Ctrl+Clicking on the location panel!  
 
 ## Features
 
 - A configurable location panel showing your current zone and level range.
-- Two coordinate frames.
+- Two coordinate panels.
 - Two datatext panels to show information such as FPS, latency, gear durability or any other datatexts.
 - Lots of settings such as position, size, transparency, features, and more!
 - A tooltip with extended zone information and content recommendation when hovering the location panel.
@@ -13,9 +14,9 @@ An external module for pFUI inspired by [LocationPlus by Benik](https://github.c
 ## Screenshots
 
 <img width="921" height="87" alt="image" src="https://github.com/user-attachments/assets/28fe81d8-d2d1-4f59-af79-3fb4d6be4feb" /><br>
-*The frames with transparency enabled.*<br><br><br>
+*The panels with transparency enabled.*<br><br><br>
 <img width="921" height="87" alt="image" src="https://github.com/user-attachments/assets/47741cc4-921d-43ca-9cdf-8b7bfaa4d2ae" /><br>
-*The frames with transparency disabled and with matching height.*<br><br><br>
+*The panels with transparency disabled and with matching height.*<br><br><br>
 <img width="552" height="720" alt="tooltip" src="https://github.com/user-attachments/assets/51ed8901-7e6f-4737-901d-4d78a89d3432" /><br>
 *The zone information tooltip with both zones and instances recommendation enabled.*<br><br><br>
 <img width="687" height="1446" alt="options" src="https://github.com/user-attachments/assets/4ae46d5a-5fcc-4b83-bbea-baba40fd0408" /><br>
@@ -41,13 +42,14 @@ This addon requires [pfUI](https://github.com/shagu/pfUI) or one of its maintain
 
 ## Known Issues
 
-None so far. Please report any issues you encounter through the `Issues` tab on this repository. Feel free to make a PR if you wish to contribute to this addon!
+None so far.  
+Please report any issues you encounter through the `Issues` tab on this repository. Feel free to make a PR if you wish to contribute to this addon!
 
 ## Compatibility
 
 This addon was designed and tested for TurtleWoW. It should be compatible with any 1.12 client that does not add or modify zones.  
 This addon is compatible with [the original pfUI by Shagu](https://github.com/shagu/pfUI), but also its actively maintained forks such as [me0wg4ming's](https://github.com/me0wg4ming/pfUI).  
-Due to the lack of zone's IDs related API in 1.12 (as far as I'm aware), WoW clients using any other language than English might encounter issues. If any such issues arise, please feel free to report it through the `Issues` tab on this repository.
+Due to the lack of zone's IDs related API in 1.12 (as far as I'm aware), WoW clients using any other language than English may encounter issues. If any such issues arise, please feel free to report it through the `Issues` tab on this repository.
 
 ## Addon Recommendations
 

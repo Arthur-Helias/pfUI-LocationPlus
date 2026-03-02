@@ -2,6 +2,25 @@
 
 All changes to this project will be documented in this file.
 
+## [1.3.0] - 2026-03-02
+
+### Added
+
+- Added TurtleWoW-only flags to zones/instances to avoid recommendations on non-TurtleWoW servers
+- Added phase-based instance recommendation for TurtleWoW's realms Nordanaar, Tel'Abim, and Ambershire
+- Added improvements to the instance recommendation system to sort the content based on instance size and instance type
+- Added full localization, albeit while still using LLMs
+
+### Changed
+
+- Changed most of the function declarations from `pfUI-locplus.lua` to `liblocplus.lua`
+- Changed version global variable from `PFLP_VERSION` to `PFLP_VERSION_MAJOR`, `PFLP_VERSION_MINOR`, and `PFLP_VERSION_PATCH`
+- Changed most of the code structure to improve maintainability and reduce duplicates
+
+### Fixed
+
+- Fixed the right datatext panel not registering mouse clicks
+
 ## [1.2.5] - 2026-02-25
 
 ### Fixed
