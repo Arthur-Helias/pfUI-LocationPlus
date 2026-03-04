@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.3.1] - 2026-03-04
+
+### Fixed
+
+- Fixed Black Morass not being found
+
 ## [1.3.0] - 2026-03-02
 
 ### Added
