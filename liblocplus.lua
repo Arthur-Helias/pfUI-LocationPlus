@@ -32,6 +32,17 @@ local function IsPlayingOnTurtleWoW()
     return true
 end
 
+local function CalcLevelDiff(minLevel, maxLevel, playerLevel)
+    return (floor((maxLevel - minLevel) / 2) + minLevel) - playerLevel
+end
+
+local function BuildRecommendationLevelRangeText(minLevel, maxLevel)
+    local color = LibLocPlus:GetZoneLevelRangeColor(minLevel, maxLevel)
+    local range = minLevel ~= maxLevel and (minLevel .. "-" .. maxLevel) or tostring(minLevel)
+
+    return color .. range .. "|r"
+end
+
 LibLocPlus.Colors = {
     Red = "|cffdb2121",
     LightRed = "|cffffaaaa",
@@ -168,17 +179,6 @@ function LibLocPlus:IsPlayerFisherman()
     end
 
     return false, nil
-end
-
-local function CalcLevelDiff(minLevel, maxLevel, playerLevel)
-    return (floor((maxLevel - minLevel) / 2) + minLevel) - playerLevel
-end
-
-local function BuildRecommendationLevelRangeText(minLevel, maxLevel)
-    local color = LibLocPlus:GetZoneLevelRangeColor(minLevel, maxLevel)
-    local range = minLevel ~= maxLevel and (minLevel .. "-" .. maxLevel) or tostring(minLevel)
-
-    return color .. range .. "|r"
 end
 
 function LibLocPlus:GetRecommendedContent(realZoneName)

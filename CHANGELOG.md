@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.3.2] - 2026-03-04
+
+### Added
+
+- Added zone level range color to the tooltip line for Level Range
+
 ## [1.3.1] - 2026-03-04
 
 ### Fixed
