@@ -101,6 +101,7 @@ if GetLocale() == "esES" then
     PFLP_REALZONENAME_BLACKWINGLAIR = "Guarida de Alanegra"
     PFLP_REALZONENAME_BLASTEDLANDS = "Las Tierras Devastadas"
     PFLP_REALZONENAME_BURNINGSTEPPES = "Las Estepas Ardientes"
+    PFLP_REALZONENAME_CAVERNSOFTIME = "Las Cavernas del Tiempo"
     PFLP_REALZONENAME_DARKSHORE = "Costa Oscura"
     PFLP_REALZONENAME_DARNASSUS = "Darnassus"
     PFLP_REALZONENAME_DEADWINDPASS = "Paso de la Muerte"

@@ -101,6 +101,7 @@ if GetLocale() == "frFR" then
     PFLP_REALZONENAME_BLACKWINGLAIR = "Repaire de l'Aile noire"
     PFLP_REALZONENAME_BLASTEDLANDS = "Terres foudroyées"
     PFLP_REALZONENAME_BURNINGSTEPPES = "Steppes ardentes"
+    PFLP_REALZONENAME_CAVERNSOFTIME = "Cavernes du Temps"
     PFLP_REALZONENAME_DARKSHORE = "Sombrivage"
     PFLP_REALZONENAME_DARNASSUS = "Darnassus"
     PFLP_REALZONENAME_DEADWINDPASS = "Défilé de Deuillevent"

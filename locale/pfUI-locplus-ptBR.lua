@@ -101,6 +101,7 @@ if GetLocale() == "ptBR" then
     PFLP_REALZONENAME_BLACKWINGLAIR = "Covil Asa Negra"
     PFLP_REALZONENAME_BLASTEDLANDS = "Barreira do Inferno"
     PFLP_REALZONENAME_BURNINGSTEPPES = "Estepes Ardentes"
+    PFLP_REALZONENAME_CAVERNSOFTIME = "Cavernas do Tempo"
     PFLP_REALZONENAME_DARKSHORE = "Costa Negra"
     PFLP_REALZONENAME_DARNASSUS = "Darnassus"
     PFLP_REALZONENAME_DEADWINDPASS = "Trilha do Vento Morto"

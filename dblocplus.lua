@@ -104,6 +104,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_BLACKSTONEISLAND] = { 1, 10, DC.KLMDR, 1, DS.Horde, false, true, true, nil },
     [PFLP_REALZONENAME_BLASTEDLANDS] = { 45, 55, DC.EK, 235, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_BURNINGSTEPPES] = { 50, 58, DC.EK, 240, DS.Contested, false, true, false, nil },
+    [PFLP_REALZONENAME_CAVERNSOFTIME] = { 60, 60, DC.KLMDR, 0, DS.Contested, false, false, true, nil },
     [PFLP_REALZONENAME_DARKSHORE] = { 10, 20, DC.KLMDR, 50, DS.Alliance, false, true, false, nil },
     [PFLP_REALZONENAME_DARNASSUS] = { 1, 10, DC.KLMDR, 1, DS.Alliance, true, false, false, nil },
     [PFLP_REALZONENAME_DEADWINDPASS] = { 55, 60, DC.EK, 290, DS.Contested, false, true, false, nil },

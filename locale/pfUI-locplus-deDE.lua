@@ -101,6 +101,7 @@ if GetLocale() == "deDE" then
     PFLP_REALZONENAME_BLACKWINGLAIR = "Pechschwingenhort"
     PFLP_REALZONENAME_BLASTEDLANDS = "Verwüstete Lande"
     PFLP_REALZONENAME_BURNINGSTEPPES = "Brennende Steppe"
+    PFLP_REALZONENAME_CAVERNSOFTIME = "Höhlen der Zeit"
     PFLP_REALZONENAME_DARKSHORE = "Dunkelküste"
     PFLP_REALZONENAME_DARNASSUS = "Darnassus"
     PFLP_REALZONENAME_DEADWINDPASS = "Gebirgspass der Totenwinde"

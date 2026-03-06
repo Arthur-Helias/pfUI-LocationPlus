@@ -101,6 +101,7 @@ if GetLocale() == "ruRU" then
     PFLP_REALZONENAME_BLACKWINGLAIR = "Логово Крыла Тьмы"
     PFLP_REALZONENAME_BLASTEDLANDS = "Выжженные земли"
     PFLP_REALZONENAME_BURNINGSTEPPES = "Пылающие степи"
+    PFLP_REALZONENAME_CAVERNSOFTIME = "Пещеры Времени"
     PFLP_REALZONENAME_DARKSHORE = "Тёмные берега"
     PFLP_REALZONENAME_DARNASSUS = "Дарнас"
     PFLP_REALZONENAME_DEADWINDPASS = "Перевал Мёртвого Ветра"
