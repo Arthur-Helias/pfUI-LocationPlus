@@ -84,6 +84,7 @@ if GetLocale() == "ruRU" then
     PFLP_DISPLAYNAME_DIREMAULWEST = "Забытый Город (Запад)"
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Нижняя часть пика Чёрной горы"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Верхняя часть пика Чёрной горы"
+    PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Монастырь Алого ордена (Оружейная)"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Ала'Талас"
@@ -149,6 +150,7 @@ if GetLocale() == "ruRU" then
     PFLP_REALZONENAME_SCARLETENCLAVE = "Алый оплот"
     PFLP_REALZONENAME_SCARLETMONASTERY = "Монастырь Алого ордена"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Монастырь Алого ордена (Оружейная)"
+    PFLP_REALZONENAME_SCARLETMONASTERYARMORYFAKE = "Монастырь Алого ордена (Оружейная)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Монастырь Алого ордена (Собор)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Монастырь Алого ордена (Кладбище)"
     PFLP_REALZONENAME_SCARLETMONASTERYLIBRARY = "Монастырь Алого ордена (Библиотека)"

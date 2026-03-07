@@ -84,6 +84,7 @@ if GetLocale() == "deDE" then
     PFLP_DISPLAYNAME_DIREMAULWEST = "Düsterbruch (West)"
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Untere Schwarzfelsspitze"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Obere Schwarzfelsspitze"
+    PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Scharlachrotes Kloster (Waffenkammer)"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
@@ -149,6 +150,7 @@ if GetLocale() == "deDE" then
     PFLP_REALZONENAME_SCARLETENCLAVE = "Scharlachrote Enklave"
     PFLP_REALZONENAME_SCARLETMONASTERY = "Scharlachrotes Kloster"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Scharlachrotes Kloster (Waffenkammer)"
+    PFLP_REALZONENAME_SCARLETMONASTERYARMORYFAKE = "Scharlachrotes Kloster (Waffenkammer)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Scharlachrotes Kloster (Kathedrale)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Scharlachrotes Kloster (Friedhof)"
     PFLP_REALZONENAME_SCARLETMONASTERYLIBRARY = "Scharlachrotes Kloster (Bibliothek)"

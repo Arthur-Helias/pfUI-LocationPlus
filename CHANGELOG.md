@@ -2,6 +2,13 @@
 
 All changes to this project will be documented in this file.
 
+## [1.3.5] - 2026-03-07
+
+### Fixed
+
+- Fixed Scarlet Monastery Armory and Scarlet Monastery weird interaction bug
+- Fixed Scarlet Monastery Armory not being found (again)
+
 ## [1.3.4] - 2026-03-07
 
 ### Fixed

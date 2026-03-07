@@ -84,6 +84,7 @@ if GetLocale() == "esES" then
     PFLP_DISPLAYNAME_DIREMAULWEST = "La Masacre (Oeste)"
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Cumbre de Roca Negra (Inferior)"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Cumbre de Roca Negra (Superior)"
+    PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Monasterio Escarlata (Armería)"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
@@ -149,6 +150,7 @@ if GetLocale() == "esES" then
     PFLP_REALZONENAME_SCARLETENCLAVE = "Enclave Escarlata"
     PFLP_REALZONENAME_SCARLETMONASTERY = "Monasterio Escarlata"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Monasterio Escarlata (Armería)"
+    PFLP_REALZONENAME_SCARLETMONASTERYARMORYFAKE = "Monasterio Escarlata (Armería)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Monasterio Escarlata (Catedral)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Monasterio Escarlata (Cementerio)"
     PFLP_REALZONENAME_SCARLETMONASTERYLIBRARY = "Monasterio Escarlata (Biblioteca)"

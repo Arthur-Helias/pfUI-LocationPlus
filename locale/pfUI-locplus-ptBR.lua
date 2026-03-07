@@ -84,6 +84,7 @@ if GetLocale() == "ptBR" then
     PFLP_DISPLAYNAME_DIREMAULWEST = "Glaive Néfasto (Oeste)"
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Pico da Rocha Negra (Inferior)"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Pico da Rocha Negra (Superior)"
+    PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Mosteiro Escarlate (Armaria)"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
@@ -149,6 +150,7 @@ if GetLocale() == "ptBR" then
     PFLP_REALZONENAME_SCARLETENCLAVE = "Enclave Escarlata"
     PFLP_REALZONENAME_SCARLETMONASTERY = "Mosteiro Escarlate"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Mosteiro Escarlate (Armaria)"
+    PFLP_REALZONENAME_SCARLETMONASTERYARMORYFAKE = "Mosteiro Escarlate (Armaria)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Mosteiro Escarlate (Catedral)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Mosteiro Escarlate (Cemitério)"
     PFLP_REALZONENAME_SCARLETMONASTERYLIBRARY = "Mosteiro Escarlate (Biblioteca)"

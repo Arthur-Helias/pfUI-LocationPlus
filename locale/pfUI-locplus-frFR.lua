@@ -84,6 +84,7 @@ if GetLocale() == "frFR" then
     PFLP_DISPLAYNAME_DIREMAULWEST = "Hache-tripes (Ouest)"
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Pic de Rochenoire (Inférieur)"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Pic de Rochenoire (Supérieur)"
+    PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Monastère Ecarlate (Armurerie)"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
@@ -149,6 +150,7 @@ if GetLocale() == "frFR" then
     PFLP_REALZONENAME_SCARLETENCLAVE = "Enclave Écarlate"
     PFLP_REALZONENAME_SCARLETMONASTERY = "Monastère Écarlate"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Monastère Ecarlate (Armurerie)"
+    PFLP_REALZONENAME_SCARLETMONASTERYARMORYFAKE = "Monastère Ecarlate (Armurerie)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Monastère Ecarlate (Cathédrale)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Monastère Ecarlate (Cimetière)"
     PFLP_REALZONENAME_SCARLETMONASTERYLIBRARY = "Monastère Ecarlate (Bibliothèque)"
