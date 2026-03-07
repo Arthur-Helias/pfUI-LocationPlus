@@ -147,6 +147,7 @@ if GetLocale() == "esES" then
     PFLP_REALZONENAME_REDRIDGEMOUNTAINS = "Montañas Crestagrana"
     PFLP_REALZONENAME_RUINSOFAHNQIRAJ = "Ruinas de Ahn'Qiraj"
     PFLP_REALZONENAME_SCARLETENCLAVE = "Enclave Escarlata"
+    PFLP_REALZONENAME_SCARLETMONASTERY = "Monasterio Escarlata"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Monasterio Escarlata (Armería)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Monasterio Escarlata (Catedral)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Monasterio Escarlata (Cementerio)"

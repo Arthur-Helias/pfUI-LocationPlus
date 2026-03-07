@@ -90,7 +90,7 @@ DBLocPlus.PhaseTWOWAmbershire = {
 local DC = DBLocPlus.Continent
 local DS = DBLocPlus.Status
 
--- /!\ The fishing level requirements for Turtle WoW added zones are based on their player level range. The information could be inaccurate. Feel free to make a PR if you do possess accurate data.
+-- /!\ The fishing level requirements for Turtle WoW's added zones are based on their player level range. The information could be inaccurate. Feel free to make a PR if you do possess accurate data.
 -- [zoneNameLocalized] = { minLevelRange, maxLevelRange, continentLocalized, fishingLevelRequirement, statusLocalized, isCity, isRecommendable, isTurtleWoWOnly, realZoneNameForDisplayNameLocalized }
 DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_ALAHTHALAS] = { 1, 10, DC.EK, 1, DS.Alliance, true, false, true, nil },
@@ -131,6 +131,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_ORGRIMMAR] = { 1, 10, DC.KLMDR, 1, DS.Horde, true, false, false, nil },
     [PFLP_REALZONENAME_REDRIDGEMOUNTAINS] = { 15, 25, DC.EK, 80, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_SCARLETENCLAVE] = { 55, 60, DC.EK, 280, DS.Contested, false, true, true, nil },
+    [PFLP_REALZONENAME_SCARLETMONASTERY] = { 30, 45, DC.EK, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_SEARINGGORGE] = { 43, 50, DC.EK, 0, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_SILITHUS] = { 55, 60, DC.KLMDR, 0, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_SILVERPINEFOREST] = { 10, 20, DC.EK, 50, DS.Horde, false, true, false, nil },

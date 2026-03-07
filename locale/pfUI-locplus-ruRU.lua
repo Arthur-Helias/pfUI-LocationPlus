@@ -147,6 +147,7 @@ if GetLocale() == "ruRU" then
     PFLP_REALZONENAME_REDRIDGEMOUNTAINS = "Красногорье"
     PFLP_REALZONENAME_RUINSOFAHNQIRAJ = "Руины Ан'Киража"
     PFLP_REALZONENAME_SCARLETENCLAVE = "Алый оплот"
+    PFLP_REALZONENAME_SCARLETMONASTERY = "Монастырь Алого ордена"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Монастырь Алого ордена (Оружейная)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Монастырь Алого ордена (Собор)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Монастырь Алого ордена (Кладбище)"

@@ -147,6 +147,7 @@ if GetLocale() == "deDE" then
     PFLP_REALZONENAME_REDRIDGEMOUNTAINS = "Rotkammgebirge"
     PFLP_REALZONENAME_RUINSOFAHNQIRAJ = "Ruinen von Ahn'Qiraj"
     PFLP_REALZONENAME_SCARLETENCLAVE = "Scharlachrote Enklave"
+    PFLP_REALZONENAME_SCARLETMONASTERY = "Scharlachrotes Kloster"
     PFLP_REALZONENAME_SCARLETMONASTERYARMORY = "Scharlachrotes Kloster (Waffenkammer)"
     PFLP_REALZONENAME_SCARLETMONASTERYCATHEDRAL = "Scharlachrotes Kloster (Kathedrale)"
     PFLP_REALZONENAME_SCARLETMONASTERYGRAVEYARD = "Scharlachrotes Kloster (Friedhof)"

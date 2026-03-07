@@ -2,6 +2,16 @@
 
 All changes to this project will be documented in this file.
 
+## [1.3.4] - 2026-03-07
+
+### Fixed
+
+- Fixed Scarlet Monastery not being found
+- Fixed Scarlet Monastery Graveyard not being found
+- Fixed Scarlet Monastery Library not being found
+- Fixed Scarlet Monastery Armory not being found
+- Fixed Scarlet Monastery Cathedral not being found
+
 ## [1.3.3] - 2026-03-06
 
 ### Fixed
