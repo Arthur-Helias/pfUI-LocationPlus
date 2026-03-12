@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.3.6] - 2026-03-12
+
+### Changed
+
+- Changed Emerald Sanctum level range from 58-60 to 60-60
+
 ## [1.3.5] - 2026-03-07
 
 ### Fixed
