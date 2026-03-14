@@ -2,6 +2,15 @@
 
 All changes to this project will be documented in this file.
 
+## [1.4.0] - 2026-03-15
+
+### Added
+
+- Added Moonwhisper Coast
+- Added Windhorn Canyon
+- Added Frostmane Hollow
+- Added Timbermaw Hold
+
 ## [1.3.6] - 2026-03-12
 
 ### Changed
