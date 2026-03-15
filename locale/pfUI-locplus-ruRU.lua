@@ -131,6 +131,7 @@ if GetLocale() == "ruRU" then
     PFLP_REALZONENAME_HYJAL = "Хиджал"
     PFLP_REALZONENAME_IRONFORGE = "Стальгорн"
     PFLP_REALZONENAME_KARAZHANCRYPT = "Склеп Каражана"
+    PFLP_REALZONENAME_KARAZHANCRYPTFAKE = "Склеп Каражана"
     PFLP_REALZONENAME_LAPIDISISLE = "Остров Лапидис"
     PFLP_REALZONENAME_LOCHMODAN = "Лок Модан"
     PFLP_REALZONENAME_LOWERBLACKROCKSPIRE = "Пик Чёрной горы"

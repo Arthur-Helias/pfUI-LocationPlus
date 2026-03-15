@@ -1,6 +1,6 @@
 PFLP_VERSION_MAJOR = "1"
 PFLP_VERSION_MINOR = "4"
-PFLP_VERSION_PATCH = "0"
+PFLP_VERSION_PATCH = "1"
 
 pfUI:RegisterModule("locationplus", "vanilla", function()
     local font = C.panel.use_unitfonts == "1" and pfUI.font_unit or pfUI.font_default
@@ -155,7 +155,7 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
         end
 
         GameTooltip:AddDoubleLine(PFLP_TOOLTIP_LEVELRANGELABEL,
-        LibLocPlus:GetZoneLevelRangeColor(zoneInformation.MinLevelRange, zoneInformation.MaxLevelRange) ..
+            LibLocPlus:GetZoneLevelRangeColor(zoneInformation.MinLevelRange, zoneInformation.MaxLevelRange) ..
             zoneLevelRange)
 
         if not isPlayerInInstance and playerFisherman and zoneInformation.FishingLevelRequirement ~= 0 then
