@@ -123,6 +123,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_HILLSBRADFOOTHILLS] = { 20, 30, DC.EK, 100, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_HYJAL] = { 58, 60, DC.KLMDR, 290, DS.Contested, false, true, true, nil },
     [PFLP_REALZONENAME_IRONFORGE] = { 1, 10, DC.EK, 0, DS.Alliance, true, false, false, nil },
+    [PFLP_REALZONENAME_KARAZHANCRYPTFAKE] = { 58, 60, DC.EK, 0, DS.Contested, false, false, true, nil },
     [PFLP_REALZONENAME_LAPIDISISLE] = { 48, 53, DC.EK, 225, DS.Contested, false, true, true, nil },
     [PFLP_REALZONENAME_LOCHMODAN] = { 10, 20, DC.EK, 50, DS.Alliance, false, true, false, nil },
     [PFLP_REALZONENAME_MOONGLADE] = { 1, 60, DC.KLMDR, 205, DS.Contested, false, false, false, nil },

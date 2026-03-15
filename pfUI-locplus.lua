@@ -71,6 +71,7 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
 
         if not currentRealZone then
             lpRootFrame.text:SetText(PFLP_ERROR_NOREALZONE)
+
             return
         end
 
@@ -78,6 +79,7 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
 
         if not instanceInformation then
             lpRootFrame.text:SetText(PFLP_ERROR_NOREALZONE)
+
             return
         end
 
@@ -91,6 +93,7 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
 
         if not currentRealZone then
             lpRootFrame.text:SetText(PFLP_ERROR_NOREALZONE)
+
             return
         end
 
@@ -98,6 +101,7 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
 
         if not zoneInformation then
             lpRootFrame.text:SetText(PFLP_ERROR_NOREALZONE)
+
             return
         end
 
@@ -150,7 +154,9 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
             zoneLevelRange = tostring(zoneInformation.MaxLevelRange)
         end
 
-        GameTooltip:AddDoubleLine(PFLP_TOOLTIP_LEVELRANGELABEL, LibLocPlus:GetZoneLevelRangeColor(zoneInformation.MinLevelRange, zoneInformation.MaxLevelRange) .. zoneLevelRange)
+        GameTooltip:AddDoubleLine(PFLP_TOOLTIP_LEVELRANGELABEL,
+        LibLocPlus:GetZoneLevelRangeColor(zoneInformation.MinLevelRange, zoneInformation.MaxLevelRange) ..
+            zoneLevelRange)
 
         if not isPlayerInInstance and playerFisherman and zoneInformation.FishingLevelRequirement ~= 0 then
             local color = (playerFishingLevel >= zoneInformation.FishingLevelRequirement) and LibLocPlus.Colors.Green or
