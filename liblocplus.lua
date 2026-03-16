@@ -91,6 +91,7 @@ function LibLocPlus:GetInstanceInformation(realZoneName)
         for _, info in pairs(DBLocPlus.INSTANCES) do
             if info[9] == realZoneName then
                 information = info
+                
                 break
             end
         end

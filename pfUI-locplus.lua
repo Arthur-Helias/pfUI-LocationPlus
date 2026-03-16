@@ -1,6 +1,6 @@
 PFLP_VERSION_MAJOR = "1"
 PFLP_VERSION_MINOR = "4"
-PFLP_VERSION_PATCH = "1"
+PFLP_VERSION_PATCH = "2"
 
 pfUI:RegisterModule("locationplus", "vanilla", function()
     local font = C.panel.use_unitfonts == "1" and pfUI.font_unit or pfUI.font_default
@@ -197,6 +197,8 @@ pfUI:RegisterModule("locationplus", "vanilla", function()
     lpRootFrame:RegisterForClicks("LeftButtonUp", "RightButtonUp")
     lpRootFrame:RegisterEvent("MINIMAP_ZONE_CHANGED")
     lpRootFrame:RegisterEvent("PLAYER_ENTERING_WORLD")
+    lpRootFrame:RegisterEvent("ZONE_CHANGED_NEW_AREA")
+    lpRootFrame:RegisterEvent("ZONE_CHANGED")
     lpRootFrame:SetScript("OnClick", function()
         if IsShiftKeyDown() and arg1 == "LeftButton" then
             local left = _G["lpLeftDataPanel"]

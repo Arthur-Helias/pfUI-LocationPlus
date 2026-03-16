@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.4.2] - 2026-03-17
+
+### Fixed
+
+- Fixed zones not being found when entering or exiting instances in some cases
+
 ## [1.4.1] - 2026-03-15
 
 ### Fixed
