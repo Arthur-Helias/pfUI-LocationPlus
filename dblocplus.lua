@@ -100,6 +100,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_AZSHARA] = { 45, 55, DC.KLMDR, 200, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_BADLANDS] = { 35, 45, DC.EK, 175, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_BALOR] = { 29, 34, DC.EK, 145, DS.Contested, false, true, true, nil },
+    [PFLP_REALZONENAME_BLACKFATHOMDEEPS] = { 22, 31, DC.KLMDR, 75, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_BLACKROCKMOUNTAIN] = { 50, 58, DC.EK, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_BLACKSTONEISLAND] = { 1, 10, DC.KLMDR, 1, DS.Horde, false, true, true, nil },
     [PFLP_REALZONENAME_BLASTEDLANDS] = { 45, 55, DC.EK, 235, DS.Contested, false, true, false, nil },
