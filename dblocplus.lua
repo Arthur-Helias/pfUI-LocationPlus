@@ -153,6 +153,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_TIRISFALGLADES] = { 1, 10, DC.EK, 1, DS.Horde, false, true, false, nil },
     [PFLP_REALZONENAME_UNDERCITY] = { 1, 10, DC.EK, 1, DS.Horde, true, false, false, nil },
     [PFLP_REALZONENAME_UNGOROCRATER] = { 48, 55, DC.KLMDR, 225, DS.Contested, false, true, false, nil },
+    [PFLP_REALZONENAME_WAILINGCAVERNS] = { 16, 25, DC.KLMDR, 50, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_WESTERNPLAGUELANDS] = { 51, 58, DC.EK, 255, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_WESTFALL] = { 10, 20, DC.EK, 50, DS.Alliance, false, true, false, nil },
     [PFLP_REALZONENAME_WETLANDS] = { 20, 30, DC.EK, 105, DS.Contested, false, true, false, nil },
