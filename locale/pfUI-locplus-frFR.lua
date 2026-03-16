@@ -85,6 +85,7 @@ if GetLocale() == "frFR" then
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Pic de Rochenoire (Inférieur)"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Pic de Rochenoire (Supérieur)"
     PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Monastère Ecarlate (Armurerie)"
+    PFLP_DISPLAYNAME_THECRESCENTGROVE = "Le Bosquet du Croissant"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"

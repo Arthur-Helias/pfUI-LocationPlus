@@ -85,6 +85,7 @@ if GetLocale() == "ptBR" then
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Pico da Rocha Negra (Inferior)"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Pico da Rocha Negra (Superior)"
     PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Mosteiro Escarlate (Armaria)"
+    PFLP_DISPLAYNAME_THECRESCENTGROVE = "Bosque da Lua Crescente"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"

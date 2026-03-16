@@ -85,6 +85,7 @@ if GetLocale() == "esES" then
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Cumbre de Roca Negra (Inferior)"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Cumbre de Roca Negra (Superior)"
     PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Monasterio Escarlata (Armería)"
+    PFLP_DISPLAYNAME_THECRESCENTGROVE = "La Arboleda Creciente"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"

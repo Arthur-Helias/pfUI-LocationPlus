@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.4.4] - 2026-03-17
+
+### Fixed
+
+- Fixed Crescent Grove not being found
+
 ## [1.4.3] - 2026-03-17
 
 ### Fixed

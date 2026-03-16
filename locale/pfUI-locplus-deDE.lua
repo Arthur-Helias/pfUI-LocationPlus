@@ -85,6 +85,7 @@ if GetLocale() == "deDE" then
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Untere Schwarzfelsspitze"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Obere Schwarzfelsspitze"
     PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Scharlachrotes Kloster (Waffenkammer)"
+    PFLP_DISPLAYNAME_THECRESCENTGROVE = "Der Sichelhain"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"

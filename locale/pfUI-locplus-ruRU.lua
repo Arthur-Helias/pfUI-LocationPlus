@@ -85,6 +85,7 @@ if GetLocale() == "ruRU" then
     PFLP_DISPLAYNAME_LOWERBLACKROCKSPIRE = "Нижняя часть пика Чёрной горы"
     PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE = "Верхняя часть пика Чёрной горы"
     PFLP_DISPLAYNAME_SCARLETMONASTERYARMORY = "Монастырь Алого ордена (Оружейная)"
+    PFLP_DISPLAYNAME_THECRESCENTGROVE = "Полумесячная роща"
 
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Ала'Талас"
