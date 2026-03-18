@@ -131,6 +131,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_MOONWHISPERCOAST] = { 50, 56, DC.KLMDR, 250, DS.Contested, false, true, true, nil },
     [PFLP_REALZONENAME_MULGORE] = { 1, 10, DC.KLMDR, 1, DS.Horde, false, true, false, nil },
     [PFLP_REALZONENAME_NORTHWIND] = { 28, 34, DC.EK, 140, DS.Contested, false, true, true, nil },
+    [PFLP_REALZONENAME_ONYXIASLAIR] = { 60, 60, DC.KLMDR, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_ORGRIMMAR] = { 1, 10, DC.KLMDR, 1, DS.Horde, true, false, false, nil },
     [PFLP_REALZONENAME_REDRIDGEMOUNTAINS] = { 15, 25, DC.EK, 80, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_SCARLETENCLAVE] = { 55, 60, DC.EK, 280, DS.Contested, false, true, true, nil },

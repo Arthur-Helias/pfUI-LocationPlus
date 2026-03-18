@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.4.6] - 2026-03-19
+
+### Fixed
+
+- Fixed Onixya's Lair entrance not being found
+
 ## [1.4.5] - 2026-03-17
 
 ### Fixed
