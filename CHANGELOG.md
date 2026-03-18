@@ -6,7 +6,7 @@ All changes to this project will be documented in this file.
 
 ### Changed
 
-- Changed the availability of the phases on Ambershire for Emerald Sanctum and BWL
+- Changed the availability of the phases on Ambershire for Emerald Sanctum, BWL and Onyxia's Lair
 - Changed the availability of the phases on Tel Abim for Timbermaw Hold
 - Changed the availability of the phases on Nordaanar for Timbermaw Hold
 
