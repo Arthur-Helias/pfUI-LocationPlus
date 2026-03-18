@@ -53,7 +53,7 @@ DBLocPlus.PhaseTWOWNordanaar = {
     [DP.AQ] = true,
     [DP.Naxx] = true,
     [DP.Kara] = true,
-    [DP.TH] = false,
+    [DP.TH] = true,
 }
 
 DBLocPlus.PhaseTWOWTelAbim = {
@@ -66,16 +66,16 @@ DBLocPlus.PhaseTWOWTelAbim = {
     [DP.AQ] = true,
     [DP.Naxx] = true,
     [DP.Kara] = true,
-    [DP.TH] = false,
+    [DP.TH] = true,
 }
 
 DBLocPlus.PhaseTWOWAmbershire = {
     [DP.MC] = true,
     [DP.DM] = true,
     [DP.OL] = false,
-    [DP.BWL] = false,
+    [DP.BWL] = true,
     [DP.ZG] = true,
-    [DP.ES] = false,
+    [DP.ES] = true,
     [DP.AQ] = false,
     [DP.Naxx] = false,
     [DP.Kara] = false,
