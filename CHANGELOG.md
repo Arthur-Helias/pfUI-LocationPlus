@@ -2,6 +2,14 @@
 
 All changes to this project will be documented in this file.
 
+## [1.5.0] - 2026-03-21
+
+### Added
+
+- Added Windhorn Canyon's entrance
+- Added Timbermaw Tunnels
+- Added Timbermaw Hold's entrance
+
 ## [1.4.7] - 2026-03-19
 
 ### Changed
