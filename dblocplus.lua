@@ -155,6 +155,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_TIMBERMAWHOLD] = { 50, 60, DC.KLMDR, 0, DS.Contested, false, false, true, nil },
     [PFLP_REALZONENAME_TIMBERMAWTUNNELS] = { 48, 60, DC.KLMDR, 0, DS.Contested, false, false, true, nil },
     [PFLP_REALZONENAME_TIRISFALGLADES] = { 1, 10, DC.EK, 1, DS.Horde, false, true, false, nil },
+    [PFLP_REALZONENAME_ULDAMAN] = { 41, 50, DC.EK, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_UNDERCITY] = { 1, 10, DC.EK, 1, DS.Horde, true, false, false, nil },
     [PFLP_REALZONENAME_UNGOROCRATER] = { 48, 55, DC.KLMDR, 225, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_WAILINGCAVERNS] = { 16, 25, DC.KLMDR, 50, DS.Contested, false, false, false, nil },

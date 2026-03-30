@@ -1,10 +1,10 @@
 ## Interface: 11200
 ## Title: |cff33ffccpf|cffffffffUI|cffaaaaaa [Location Plus]
-## Version: 1.5.0
+## Version: 1.5.1
 ## Author: Walter Bennet
 ## Notes: An external module for |cff33ffccpf|r|cffffffffUI|r that adds a location panel and more!
 ## Dependencies: pfUI
-## URL: https://github.com/Arthur-Helias/pfUI-LocationPlus
+## x-URL: https://github.com/Arthur-Helias/pfUI-LocationPlus
 
 # Localization
 locale\pfUI-locplus-enUS.lua

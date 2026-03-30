@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.5.1] - 2026-03-29
+
+### Fixed
+
+- Fixed Uldaman's entrance not being found
+
 ## [1.5.0] - 2026-03-21
 
 ### Added
