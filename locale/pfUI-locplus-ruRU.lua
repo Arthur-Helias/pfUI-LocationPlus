@@ -17,6 +17,7 @@ if GetLocale() == "ruRU" then
     -- Instance Types
     PFLP_INSTANCETYPE_DUNGEON = "Подземелье"
     PFLP_INSTANCETYPE_RAID = "Рейд"
+    PFLP_INSTANCETYPE_BATTLEGROUND = "Поле боя"
 
     -- Instance Sizes
     PFLP_INSTANCESIZE_5MAN = "5 игроков"
@@ -90,7 +91,9 @@ if GetLocale() == "ruRU" then
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Ала'Талас"
     PFLP_REALZONENAME_ALTERACMOUNTAINS = "Альтеракские горы"
+    PFLP_REALZONENAME_ALTERACVALLEY = "Альтеракская долина"
     PFLP_REALZONENAME_ARATHIHIGHLANDS = "Нагорье Арати"
+    PFLP_REALZONENAME_ARATHIBASIN = "Низина Арати"
     PFLP_REALZONENAME_ASHENVALE = "Ясеневый лес"
     PFLP_REALZONENAME_AZSHARA = "Азшара"
     PFLP_REALZONENAME_BADLANDS = "Бесплодные земли"
@@ -182,6 +185,7 @@ if GetLocale() == "ruRU" then
     PFLP_REALZONENAME_THEHINTERLANDS = "Внутренние земли"
     PFLP_REALZONENAME_THESTOCKADE = "Тюрьма"
     PFLP_REALZONENAME_THOUSANDNEEDLES = "Тысяча Игл"
+    PFLP_REALZONENAME_THORNGORGE = "Терновое ущелье"
     PFLP_REALZONENAME_THUNDERBLUFF = "Громовой Утёс"
     PFLP_REALZONENAME_TIMBERMAWHOLD = "Крепость Тимберло"
     PFLP_REALZONENAME_TIMBERMAWTUNNELS = "Туннели Тимберло"
@@ -192,6 +196,7 @@ if GetLocale() == "ruRU" then
     PFLP_REALZONENAME_UNGOROCRATER = "Кратер Ун'Горо"
     PFLP_REALZONENAME_UPPERBLACKROCKSPIRE = "Пик Чёрной горы"
     PFLP_REALZONENAME_WAILINGCAVERNS = "Пещеры Стенаний"
+    PFLP_REALZONENAME_WARSONGGULCH = "Ущелье Песни Войны"
     PFLP_REALZONENAME_WESTERNPLAGUELANDS = "Западные Чумные земли"
     PFLP_REALZONENAME_WESTFALL = "Западный Край"
     PFLP_REALZONENAME_WETLANDS = "Болотина"

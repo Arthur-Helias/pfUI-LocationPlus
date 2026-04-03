@@ -17,6 +17,7 @@ if GetLocale() == "ptBR" then
     -- Instance Types
     PFLP_INSTANCETYPE_DUNGEON = "Masmorra"
     PFLP_INSTANCETYPE_RAID = "Banda"
+    PFLP_INSTANCETYPE_BATTLEGROUND = "Campo de Batalha"
 
     -- Instance Sizes
     PFLP_INSTANCESIZE_5MAN = "5 jogadores"
@@ -90,7 +91,9 @@ if GetLocale() == "ptBR" then
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
     PFLP_REALZONENAME_ALTERACMOUNTAINS = "Montanhas de Alterac"
+    PFLP_REALZONENAME_ALTERACVALLEY = "Vale de Alterac"
     PFLP_REALZONENAME_ARATHIHIGHLANDS = "Planalto Arathi"
+    PFLP_REALZONENAME_ARATHIBASIN = "Bacia Arathi"
     PFLP_REALZONENAME_ASHENVALE = "Vale Gris"
     PFLP_REALZONENAME_AZSHARA = "Azshara"
     PFLP_REALZONENAME_BADLANDS = "Ermos"
@@ -182,6 +185,7 @@ if GetLocale() == "ptBR" then
     PFLP_REALZONENAME_THEHINTERLANDS = "Terras Agrestes"
     PFLP_REALZONENAME_THESTOCKADE = "Cárcere"
     PFLP_REALZONENAME_THOUSANDNEEDLES = "Mil Agulhas"
+    PFLP_REALZONENAME_THORNGORGE = "Garganta dos Espinhos"
     PFLP_REALZONENAME_THUNDERBLUFF = "Penhasco do Trovão"
     PFLP_REALZONENAME_TIMBERMAWHOLD = "Bastião Mandíbula de Madeira"
     PFLP_REALZONENAME_TIMBERMAWTUNNELS = "Túneis Mandíbula de Madeira"
@@ -192,6 +196,7 @@ if GetLocale() == "ptBR" then
     PFLP_REALZONENAME_UNGOROCRATER = "Cratera Un'Goro"
     PFLP_REALZONENAME_UPPERBLACKROCKSPIRE = "Pico da Rocha Negra"
     PFLP_REALZONENAME_WAILINGCAVERNS = "Cavernas Gementes"
+    PFLP_REALZONENAME_WARSONGGULCH = "Ravina Grito de Guerra"
     PFLP_REALZONENAME_WESTERNPLAGUELANDS = "Terras Pestilentas Ocidentais"
     PFLP_REALZONENAME_WESTFALL = "Páramos do Poente"
     PFLP_REALZONENAME_WETLANDS = "Pantanal"

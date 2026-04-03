@@ -2,6 +2,15 @@
 
 All changes to this project will be documented in this file.
 
+## [1.5.2] - 2026-04-04
+
+### Added
+
+- Added Warsong Gulch
+- Added Arathi Basin
+- Added Alterac Valley
+- Added Thorn Gorge
+
 ## [1.5.1] - 2026-03-29
 
 ### Fixed

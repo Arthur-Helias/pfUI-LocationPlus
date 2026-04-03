@@ -17,6 +17,7 @@ if GetLocale() == "deDE" then
     -- Instance Types
     PFLP_INSTANCETYPE_DUNGEON = "Kerker"
     PFLP_INSTANCETYPE_RAID = "Schlachtzug"
+    PFLP_INSTANCETYPE_BATTLEGROUND = "Schlachtfeld"
 
     -- Instance Sizes
     PFLP_INSTANCESIZE_5MAN = "5 Spieler"
@@ -90,7 +91,9 @@ if GetLocale() == "deDE" then
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
     PFLP_REALZONENAME_ALTERACMOUNTAINS = "Alteracgebirge"
+    PFLP_REALZONENAME_ALTERACVALLEY = "Alteractal"
     PFLP_REALZONENAME_ARATHIHIGHLANDS = "Arathihochland"
+    PFLP_REALZONENAME_ARATHIBASIN = "Arathibecken"
     PFLP_REALZONENAME_ASHENVALE = "Eschental"
     PFLP_REALZONENAME_AZSHARA = "Azshara"
     PFLP_REALZONENAME_BADLANDS = "Ödland"
@@ -182,6 +185,7 @@ if GetLocale() == "deDE" then
     PFLP_REALZONENAME_THEHINTERLANDS = "Hinterland"
     PFLP_REALZONENAME_THESTOCKADE = "Das Verlies"
     PFLP_REALZONENAME_THOUSANDNEEDLES = "Tausend Nadeln"
+    PFLP_REALZONENAME_THORNGORGE = "Dornenschlucht"
     PFLP_REALZONENAME_THUNDERBLUFF = "Donnerfels"
     PFLP_REALZONENAME_TIMBERMAWHOLD = "Holzschlund-Feste"
     PFLP_REALZONENAME_TIMBERMAWTUNNELS = "Holzschlund-Tunnel"
@@ -192,6 +196,7 @@ if GetLocale() == "deDE" then
     PFLP_REALZONENAME_UNGOROCRATER = "Krater von Un'Goro"
     PFLP_REALZONENAME_UPPERBLACKROCKSPIRE = "Schwarzfelsspitze"
     PFLP_REALZONENAME_WAILINGCAVERNS = "Die Höhlen des Wehklagens"
+    PFLP_REALZONENAME_WARSONGGULCH = "Kriegshymnenschlucht"
     PFLP_REALZONENAME_WESTERNPLAGUELANDS = "Westliche Pestländer"
     PFLP_REALZONENAME_WESTFALL = "Westfall"
     PFLP_REALZONENAME_WETLANDS = "Sumpfland"

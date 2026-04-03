@@ -17,6 +17,7 @@ if GetLocale() == "esES" then
     -- Instance Types
     PFLP_INSTANCETYPE_DUNGEON = "Mazmorra"
     PFLP_INSTANCETYPE_RAID = "Banda"
+    PFLP_INSTANCETYPE_BATTLEGROUND = "Campo de batalla"
 
     -- Instance Sizes
     PFLP_INSTANCESIZE_5MAN = "5 jugadores"
@@ -90,7 +91,9 @@ if GetLocale() == "esES" then
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
     PFLP_REALZONENAME_ALTERACMOUNTAINS = "Montañas de Alterac"
+    PFLP_REALZONENAME_ALTERACVALLEY = "Valle de Alterac"
     PFLP_REALZONENAME_ARATHIHIGHLANDS = "Tierras Altas de Arathi"
+    PFLP_REALZONENAME_ARATHIBASIN = "Cuenca de Arathi"
     PFLP_REALZONENAME_ASHENVALE = "Vallefresno"
     PFLP_REALZONENAME_AZSHARA = "Azshara"
     PFLP_REALZONENAME_BADLANDS = "Tierras Inhóspitas"
@@ -182,6 +185,7 @@ if GetLocale() == "esES" then
     PFLP_REALZONENAME_THEHINTERLANDS = "Tierras del Interior"
     PFLP_REALZONENAME_THESTOCKADE = "Las Mazmorras"
     PFLP_REALZONENAME_THOUSANDNEEDLES = "Las Mil Agujas"
+    PFLP_REALZONENAME_THORNGORGE = "Garganta de las Espinas"
     PFLP_REALZONENAME_THUNDERBLUFF = "Cima del Trueno"
     PFLP_REALZONENAME_TIMBERMAWHOLD = "Bastión Mandíbula de Madera"
     PFLP_REALZONENAME_TIMBERMAWTUNNELS = "Túneles Mandíbula de Madera"
@@ -192,6 +196,7 @@ if GetLocale() == "esES" then
     PFLP_REALZONENAME_UNGOROCRATER = "Cráter de Un'Goro"
     PFLP_REALZONENAME_UPPERBLACKROCKSPIRE = "Cumbre de Roca Negra"
     PFLP_REALZONENAME_WAILINGCAVERNS = "Cuevas de los Lamentos"
+    PFLP_REALZONENAME_WARSONGGULCH = "Garganta Grito de Guerra"
     PFLP_REALZONENAME_WESTERNPLAGUELANDS = "Tierras de la Peste del Oeste"
     PFLP_REALZONENAME_WESTFALL = "Páramos de Poniente"
     PFLP_REALZONENAME_WETLANDS = "Los Humedales"

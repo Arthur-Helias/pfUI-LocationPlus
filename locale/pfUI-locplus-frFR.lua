@@ -17,6 +17,7 @@ if GetLocale() == "frFR" then
     -- Instance Types
     PFLP_INSTANCETYPE_DUNGEON = "Donjon"
     PFLP_INSTANCETYPE_RAID = "Raid"
+    PFLP_INSTANCETYPE_BATTLEGROUND = "Champ de bataille"
 
     -- Instance Sizes
     PFLP_INSTANCESIZE_5MAN = "5 joueurs"
@@ -90,7 +91,9 @@ if GetLocale() == "frFR" then
     -- Real Zone Names from GetRealZoneText()
     PFLP_REALZONENAME_ALAHTHALAS = "Alah'Thalas"
     PFLP_REALZONENAME_ALTERACMOUNTAINS = "Montagnes d'Alterac"
+    PFLP_REALZONENAME_ALTERACVALLEY = "Vallée d'Alterac"
     PFLP_REALZONENAME_ARATHIHIGHLANDS = "Hautes-terres d'Arathi"
+    PFLP_REALZONENAME_ARATHIBASIN = "Bassin d'Arathi"
     PFLP_REALZONENAME_ASHENVALE = "Orneval"
     PFLP_REALZONENAME_AZSHARA = "Azshara"
     PFLP_REALZONENAME_BADLANDS = "Terres ingrates"
@@ -182,6 +185,7 @@ if GetLocale() == "frFR" then
     PFLP_REALZONENAME_THEHINTERLANDS = "Les Hinterlands"
     PFLP_REALZONENAME_THESTOCKADE = "La Prison"
     PFLP_REALZONENAME_THOUSANDNEEDLES = "Mille pointes"
+    PFLP_REALZONENAME_THORNGORGE = "Gorge des épines"
     PFLP_REALZONENAME_THUNDERBLUFF = "Les Pitons-du-Tonnerre"
     PFLP_REALZONENAME_TIMBERMAWHOLD = "Bastion des Mâchoires-de-Bois"
     PFLP_REALZONENAME_TIMBERMAWTUNNELS = "Tunnels des Mâchoires-de-Bois"
@@ -192,6 +196,7 @@ if GetLocale() == "frFR" then
     PFLP_REALZONENAME_UNGOROCRATER = "Cratère d'Un'Goro"
     PFLP_REALZONENAME_UPPERBLACKROCKSPIRE = "Pic de Rochenoire"
     PFLP_REALZONENAME_WAILINGCAVERNS = "Cavernes des lamentations"
+    PFLP_REALZONENAME_WARSONGGULCH = "Goulet du Chant de guerre"
     PFLP_REALZONENAME_WESTERNPLAGUELANDS = "Maleterres de l'ouest"
     PFLP_REALZONENAME_WESTFALL = "Marche de l'Ouest"
     PFLP_REALZONENAME_WETLANDS = "Les Paluns"

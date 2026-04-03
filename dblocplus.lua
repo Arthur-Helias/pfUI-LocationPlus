@@ -27,6 +27,7 @@ DBLocPlus.Status = {
 DBLocPlus.InstanceType = {
     Dungeon = PFLP_INSTANCETYPE_DUNGEON,
     Raid = PFLP_INSTANCETYPE_RAID,
+    Battleground = PFLP_INSTANCETYPE_BATTLEGROUND,
 }
 
 DBLocPlus.InstanceSize = {
@@ -171,6 +172,8 @@ local DIS = DBLocPlus.InstanceSize
 
 -- [instanceNameLocalized] = { minLevelRange, maxLevelRange, continentLocalized, instanceTypeLocalized, instanceSizeLocalized, isRecommendable, phaseLocked, isTurtleWoWOnly, realZoneNameForDisplayNameLocalized }
 DBLocPlus.INSTANCES = {
+    [PFLP_REALZONENAME_ALTERACVALLEY] = { 1, 60, DC.EK, DIT.Battleground, DIS.FortyMan, false, nil, false, nil },
+    [PFLP_REALZONENAME_ARATHIBASIN] = { 1, 60, DC.EK, DIT.Battleground, DIS.TwentyMan, false, nil, false, nil },
     [PFLP_REALZONENAME_BLACKFATHOMDEEPS] = { 22, 31, DC.KLMDR, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
     [PFLP_REALZONENAME_BLACKMORASS] = { 60, 60, DC.KLMDR, DIT.Dungeon, DIS.FiveMan, true, nil, true, nil },
     [PFLP_REALZONENAME_BLACKROCKDEPTHS] = { 50, 60, DC.EK, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
@@ -209,11 +212,13 @@ DBLocPlus.INSTANCES = {
     [PFLP_DISPLAYNAME_THECRESCENTGROVE] = { 32, 39, DC.KLMDR, DIT.Dungeon, DIS.FiveMan, true, nil, true, PFLP_REALZONENAME_THECRESCENTGROVE },
     [PFLP_REALZONENAME_THEDEADMINES] = { 16, 24, DC.EK, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
     [PFLP_REALZONENAME_THESTOCKADE] = { 23, 32, DC.EK, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
+    [PFLP_REALZONENAME_THORNGORGE] = { 1, 60, DC.Kalimdor, DIT.Battleground, DIS.TwentyMan, false, nil, true, nil },
     [PFLP_REALZONENAME_TIMBERMAWHOLD] = { 60, 60, DC.EK, DIT.Raid, DIS.TwentyMan, true, DP.TH, true, nil },
     [PFLP_REALZONENAME_TOWEROFKARAZHAN] = { 60, 60, DC.EK, DIT.Raid, DIS.FortyMan, true, DP.Kara, true, nil },
     [PFLP_REALZONENAME_ULDAMAN] = { 41, 50, DC.EK, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
     [PFLP_DISPLAYNAME_UPPERBLACKROCKSPIRE] = { 60, 60, DC.EK, DIT.Dungeon, DIS.TenMan, true, nil, false, PFLP_REALZONENAME_UPPERBLACKROCKSPIRE },
     [PFLP_REALZONENAME_WAILINGCAVERNS] = { 16, 25, DC.KLMDR, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
+    [PFLP_REALZONENAME_WARSONGGULCH] = { 1, 60, DC.KLMDR, DIT.Battleground, DIS.TenMan, false, nil, false, nil },
     [PFLP_REALZONENAME_WINDHORNCANYON] = { 26, 30, DC.KLMDR, DIT.Dungeon, DIS.FiveMan, true, nil, true, nil },
     [PFLP_REALZONENAME_ZULFARRAK] = { 42, 51, DC.KLMDR, DIT.Dungeon, DIS.FiveMan, true, nil, false, nil },
     [PFLP_REALZONENAME_ZULGURUB] = { 60, 60, DC.EK, DIT.Raid, DIS.TwentyMan, true, DP.ZG, false, nil },
