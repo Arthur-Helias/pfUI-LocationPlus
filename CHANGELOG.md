@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.5.3] - 2026-04-09
+
+### Fixed
+
+- Fixed Deadmines' entrance not being found
+
 ## [1.5.2] - 2026-04-04
 
 ### Added

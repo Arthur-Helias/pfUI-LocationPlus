@@ -150,6 +150,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_TELDRASSIL] = { 1, 10, DC.KLMDR, 1, DS.Alliance, false, true, false, nil },
     [PFLP_REALZONENAME_THALASSIANHIGHLANDS] = { 1, 10, DC.EK, 1, DS.Alliance, false, true, true, nil },
     [PFLP_REALZONENAME_THEBARRENS] = { 10, 25, DC.KLMDR, 50, DS.Horde, false, true, false, nil },
+    [PFLP_REALZONENAME_THEDEADMINES] = { 16, 24, DC.EK, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_THEHINTERLANDS] = { 40, 50, DC.EK, 200, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_THOUSANDNEEDLES] = { 25, 35, DC.KLMDR, 75, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_THUNDERBLUFF] = { 1, 10, DC.KLMDR, 1, DS.Horde, true, false, false, nil },
