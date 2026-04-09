@@ -128,6 +128,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_KARAZHANCRYPTFAKE] = { 58, 60, DC.EK, 0, DS.Contested, false, false, true, nil },
     [PFLP_REALZONENAME_LAPIDISISLE] = { 48, 53, DC.EK, 225, DS.Contested, false, true, true, nil },
     [PFLP_REALZONENAME_LOCHMODAN] = { 10, 20, DC.EK, 50, DS.Alliance, false, true, false, nil },
+    [PFLP_REALZONENAME_MARAUDON] = { 43, 54, DC.KLMDR, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_MOONGLADE] = { 1, 60, DC.KLMDR, 205, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_MOONWHISPERCOAST] = { 50, 56, DC.KLMDR, 250, DS.Contested, false, true, true, nil },
     [PFLP_REALZONENAME_MULGORE] = { 1, 10, DC.KLMDR, 1, DS.Horde, false, true, false, nil },
