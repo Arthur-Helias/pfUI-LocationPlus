@@ -145,6 +145,7 @@ DBLocPlus.ZONES = {
     [PFLP_REALZONENAME_STONETALONMOUNTAINS] = { 15, 27, DC.KLMDR, 75, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_STORMWINDCITY] = { 1, 10, DC.EK, 1, DS.Alliance, true, false, false, nil },
     [PFLP_REALZONENAME_STRANGLETHORNVALE] = { 30, 45, DC.EK, 150, DS.Contested, false, true, false, nil },
+    [PFLP_REALZONENAME_SUNKENTEMPLE] = { 49, 58, DC.EK, 0, DS.Contested, false, false, false, nil },
     [PFLP_REALZONENAME_SWAMPOFSORROWS] = { 35, 45, DC.EK, 175, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_TANARIS] = { 40, 50, DC.KLMDR, 225, DS.Contested, false, true, false, nil },
     [PFLP_REALZONENAME_TELABIM] = { 54, 60, DC.KLMDR, 270, DS.Contested, false, true, true, nil },

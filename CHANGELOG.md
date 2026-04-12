@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.5.5] - 2026-04-13
+
+### Fixed
+
+- Fixed Sunken Temple's entrance not being found
+
 ## [1.5.4] - 2026-04-09
 
 ### Fixed
