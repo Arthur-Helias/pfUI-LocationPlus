@@ -2,6 +2,12 @@
 
 All changes to this project will be documented in this file.
 
+## [1.5.6] - 2026-04-16
+
+### Changed
+
+- Changed level difficulty color formula when the min and max level are the same
+
 ## [1.5.5] - 2026-04-13
 
 ### Fixed

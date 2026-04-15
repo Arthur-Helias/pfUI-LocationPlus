@@ -131,10 +131,6 @@ function LibLocPlus:GetZoneLevelRangeColor(zoneMin, zoneMax)
         color = LibLocPlus.Colors.Gray
     end
 
-    if zoneMin == zoneMax then
-        color = LibLocPlus.Colors.Orange
-    end
-
     return color
 end
 
